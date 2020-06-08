@@ -66,7 +66,7 @@
       <a class="site-navigation-link" href="#">Компания</a>
     </li>
     <li class="site-navigation-item">
-      <a class="site-navigation-link" href="#">Каталог</a>
+      <a class="site-navigation-link" href="catalog.html">Каталог</a>
     </li>
     <li class="site-navigation-item">
       <a class="site-navigation-link" href="#">Новости</a>
@@ -143,13 +143,15 @@
           <div class="card-product-img-container">
             <img class="card-product-img" src="./img/product/Object-4.png" alt="" width="184" height="164">
             <div class="card-product-buttons-block">
-             <a class="card-product-button card-product-buy-button" href="#">Купить</a>
+             <a class="card-product-button card-product-buy-button" href="#">
+               <span class="card-product-buy-button-cart">Купить</span>
+               </a>
              <a class="card-product-button card-product-bookmark-button" href="#">В Закладки</a>
              </div>
           </div>
           <a class="card-product-name" href="">Перфоратор BOSCH BFG 9000</a>
-          <p class="card-product-old-price">32500 Р</p>
           <p class="card-product-new-price">
+            <span class="card-product-old-price">32500 Р</span>
             <span class="card-product-new-price-value">25500 Р</span>
           </p>
         </li>
@@ -158,14 +160,16 @@
           <div class="card-product-img-container">
             <img class="card-product-img" src="./img/product/Object-3.png" alt="" width="184" height="164">
             <div class="card-product-buttons-block">
-             <a class="card-product-button card-product-buy-button" href="#">Купить</a>
+             <a class="card-product-button card-product-buy-button" href="#">
+               <span class="card-product-buy-button-cart">Купить</span>
+               </a>
              <a class="card-product-button card-product-bookmark-button" href="#">В Закладки</a>
              </div>
           </div>
           <a class="card-product-name" href="">Перфоратор BOSCH BFG 3000</a>
-          <p class="card-product-old-price">22500 Р.</p>
           <p class="card-product-new-price">
-            <span class="card-product-new-price-value">15550 Р.</span>
+            <span class="card-product-old-price">22500 Р</span>
+            <span class="card-product-new-price-value">15500 Р</span>
           </p>
         </li>
 
@@ -173,14 +177,16 @@
           <div class="card-product-img-container">
             <img class="card-product-img" src="./img/product/Object-1.png" alt="" width="184" height="164">
             <div class="card-product-buttons-block">
-             <a class="card-product-button card-product-buy-button" href="#">Купить</a>
+             <a class="card-product-button card-product-buy-button" href="#">
+               <span class="card-product-buy-button-cart">Купить</span>
+               </a>
              <a class="card-product-button card-product-bookmark-button" href="#">В Закладки</a>
              </div>
           </div>
           <a class="card-product-name" href="">Перфоратор BOSCH BFG 6000</a>
-          <p class="card-product-old-price">30500 Р.</p>
           <p class="card-product-new-price">
-            <span class="card-product-new-price-value">25500 Р.</span>
+            <span class="card-product-old-price">30500 Р</span>
+            <span class="card-product-new-price-value">25500 Р</span>
           </p>
         </li>
 
@@ -188,7 +194,9 @@
           <div class="card-product-img-container">
             <img class="card-product-img" src="./img/product/Object-2.png" alt="" width="184" height="164">
             <div class="card-product-buttons-block">
-             <a class="card-product-button card-product-buy-button" href="#">Купить</a>
+             <a class="card-product-button card-product-buy-button" href="#">
+               <span class="card-product-buy-button-cart">Купить</span>
+               </a>
              <a class="card-product-button card-product-bookmark-button" href="#">В Закладки</a>
              </div>
           </div>
@@ -251,39 +259,41 @@
 
   <section class="service">
     <div class="wrapper">
-    <h2 class="tittle-section">Сервис</h2>
+    <h2 class="tittle-section">Сервисы</h2>
       <p class="service-paragraph">Хороший интернет-магазин отличается от плохого не только ценам!Мы стараемся изо всех сил,
          чтобы сделать ваши покупки приятными.</p>
 
 <div class="service-info-container">
          <ul class="service-list">
            <li class="service-item ">
-             <label for="service-delivery">Доставка</label>
+             <label class="service-label" for="service-delivery">Доставка</label>
            </li>
            <li class="service-item ">
-             <label for="service-guarantee">Гарантия</label>
+             <label class="service-label" for="service-guarantee">Гарантия</label>
            </li>
            <li class="service-item ">
-             <label for="service-credit">Кредит</label>
+             <label class="service-label" for="service-credit">Кредит</label>
            </li>
          </ul>
 
          <div class="service-info">
            <input class="visually-hidden service-radio" type="radio" name="service" id="service-delivery" value="" checked>
-           <article class="service-article">
+           <article class="service-article service-article-delivery">
              <h2 class="service-info-list">Доставка</h2>
-            <p class="service-info-list-paragraph">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br>
-               Ведь мы неплохо, заработаем,<br> поднимая его на ваш этаж!</p>
+            <p class="service-info-list-paragraph service-info-list-paragraph-delivery">Мы с удовольствием доставим ваш товар прямо квашему подъезду совершенно бесплатно!
+               Ведь&nbsp;мы неплохо,&nbsp;заработаем&nbsp;,&nbsp;поднимая&nbsp;его на ваш этаж!</p>
              </article >
              <input class="visually-hidden service-radio" type="radio" name="service" id="service-guarantee" value="">
-             <article  class="service-article">
+             <article  class="service-article service-article-guarantee">
                <h2 class="service-info-list">Гарантия</h2>
-              <p>Гарантия и много чего</p>
+              <p class="service-info-list-paragraph service-info-list-paragraph-guarantee">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда
+              можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.Дом уж восстановите как-нибудь сами.</p>
               </article >
               <input class="visually-hidden service-radio" type="radio" name="service" id="service-credit" value="">
-              <article class="service-article">
+              <article class="service-article service-article-credit">
                 <h2 class="service-info-list">Кредит</h2>
-              <p>Кредит и так далее</p>
+              <p class="service-info-list-paragraph service-info-list-paragraph-credit">Залезть в долговую яму стало проще!
+                Кредитные консультанты придут вам на помощь.</p>
               </article >
            </div>
          </div>
@@ -367,21 +377,18 @@
   <section class="footer-social">
    <ul class="social">
       <li>
-          <a class="social-button" href="#">
+          <a class="social-button social-button-vk" href="#">
             <span class="visually-hidden">Вконтакте</span>
-            <svg width="27" height="16" viewBox="0 0 128 76"><path d="M125,5.15c.89-3,0-5.15-4.23-5.15h-14a6,6,0,0,0-6.09,4S93.59,21.31,83.5,32.59c-3.26,3.26-4.74,4.3-6.52,4.3-.89,0-2.18-1-2.18-4V5.15c0-3.56-1-5.15-4-5.15h-22a3.37,3.37,0,0,0-3.56,3.22c0,3.37,5,4.15,5.56,13.64V37.48c0,4.52-.82,5.34-2.6,5.34-4.74,0-16.29-17.43-23.13-37.38C23.72,1.57,22.38,0,18.8,0H4.8C.8,0,0,1.88,0,4c0,3.71,4.75,22.1,22.1,46.42C33.67,67,50,76,64.8,76c8.9,0,10-2,10-5.45V58c0-4,.84-4.8,3.66-4.8,2.08,0,5.64,1,13.94,9C101.9,71.74,103.46,76,108.8,76h14c4,0,6-2,4.85-6s-5.8-9.64-11.81-16.4c-3.27-3.86-8.16-8-9.64-10.09-2.08-2.67-1.49-3.86,0-6.23,0,0,17-24,18.83-32.18Z" fill="#fff"/></svg>
           </a>
         </li>
         <li>
-          <a class="social-button" href="#">
+          <a class="social-button social-button-fb" href="#">
             <span class="visually-hidden">Фейсбук</span>
-            <svg width="19" height="22" viewBox="0 0 10.15 21.74"><path d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z" fill="#fff"/></svg>
           </a>
         </li>
         <li>
-          <a class="social-button" href="#">
+          <a class="social-button social-button-insta" href="#">
             <span class="visually-hidden">Инстаграм</span>
-            <svg width="20" height="20" viewBox="0 0 20 20"><path d="M18 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-8 6a4 4 0 1 1-4 4 4 4 0 0 1 4-4zM2.5 18a.47.47 0 0 1-.5-.5V9h2.1a3.4 3.4 0 0 0-.1 1 6 6 0 1 0 12 0 3.4 3.4 0 0 0-.1-1H18v8.5a.47.47 0 0 1-.5.5zM18 4.5a.47.47 0 0 1-.5.5h-2a.47.47 0 0 1-.5-.5v-2a.47.47 0 0 1 .5-.5h2a.47.47 0 0 1 .5.5z" fill="#fff"/></svg>
           </a>
         </li>
     </ul>
