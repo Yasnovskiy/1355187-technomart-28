@@ -38,7 +38,7 @@
   и инструментов для ремонта
   </p>
 
-<div>
+<div class="">
 <img src="/icon/icon-phone.svg" alt="">
 <a class="tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
   <address>
@@ -88,7 +88,7 @@
   <section class="wrapper">
     <ul class="location-list">
       <li class="location-list-item">
-        <a class="location-link" href="#">Каталог</a>
+        <a class="location-link" href="catalog.html">Каталог</a>
       </li>
       <li class="location-list-item">
         <a class="location-link" href="#">Инструменты</a>
@@ -153,19 +153,48 @@
           </div>
         </div>
     </fieldset>
+
   <form method="post" action="#">
     <h3>Производители:</h3>
-      <ul>
-        <li><input type="checkbox" id="bosch" name="manuf_bosch"><label for="bosch">BOSCH</label></li>
-        <li><input type="checkbox" id="intepskol" name="manuf_bosch"><label for="intepskol">ИНТЕРСКОЛ</label></li>
-        <li><input type="checkbox" id="makita" name="manuf_bosch"><label for="makita">MAKITA</label></li>
-        <li><input type="checkbox" id="dewalt" name="manuf_bosch"><label for="dewalt">DEWALT</label></li>
-        <li><input type="checkbox" id="hitachi" name="manuf_bosch"><label for="hitachi">HITACHI</label></li>
+      <ul class="check-list">
+        <li class="filter-option filter-checkbox">
+          <input class="visually-hidden check-input" type="checkbox" id="bosch" name="manuf_bosch" checked >
+          <span class="check-box"></span>
+          <label class="check" for="bosch">BOSCH</label>
+        </li>
+        <li class="filter-option filter-checkbox">
+          <input class="visually-hidden check-input" type="checkbox" id="intepskol" name="manuf_bosch">
+          <span class="check-box"></span>
+          <label class="check" for="intepskol">ИНТЕРСКОЛ</label>
+        </li>
+        <li class="filter-option filter-checkbox">
+          <input class="visually-hidden check-input" type="checkbox" id="makita" name="manuf_bosch" checked>
+        <span class="check-box"></span>
+          <label class="check" for="makita">MAKITA</label>
+        </li>
+        <li class="filter-option filter-checkbox">
+          <input class="visually-hidden check-input" type="checkbox" id="dewalt" name="manuf_bosch">
+          <span class="check-box"></span>
+          <label class="check" for="dewalt">DEWALT</label>
+        </li>
+        <li class="filter-option filter-checkbox">
+          <input class="visually-hidden check-input" type="checkbox" id="hitachi" name="manuf_bosch">
+          <span class="check-box"></span>
+          <label class="check" for="hitachi">HITACHI</label>
+        </li>
       </ul>
     <h3>Питание:</h3>
-      <ul>
-        <li><input type="radio" name="power" value="battery" id="battery"><label for="battery">Аккумуляторные</label></li>
-        <li><input type="radio" name="power" value="network" id="network"><label for="network">Сетевые</label></li>
+      <ul class="check-list">
+        <li class="filter-option filter-radio">
+          <input class="visually-hidden radio-input" type="radio" name="power" value="battery" id="battery" checked>
+          <span class="radio-box"></span>
+          <label class="radiobox" for="battery">Аккумуляторные</label>
+        </li>
+        <li  class="filter-option filter-radio">
+          <input class="visually-hidden radio-input" type="radio" name="power" value="network" id="network">
+          <span class="radio-box"></span>
+          <label class="radiobox" for="network">Сетевые</label>
+        </li>
       </ul>
 <input type="submit" value="Показать">
 </div>
@@ -389,7 +418,7 @@
 
   <section>
   <p class="rights-reserved">
-    &copy;2010-2019 Компания "Техномарт" Все права защищены
+    &copy;2010-2019 Компания «Техномарт»  Все права защищены
     </p>
 </section>
 
@@ -429,13 +458,21 @@
 </div>
 </footer>
 
-<section class="window">
-  <button type="button">Закрыть</button>
-  <p>Товар добавлен в корзину!</p>
- <ul>
-   <li><a href="#">Оформить заказ</a></li>
-   <li><button type="button">Продолжить покупки</button></li>
+<section class="modal modal-basket">
+  <div class="wrapper-modal modal-menu-write">
+  <button class="modal-close" type="button" aria-label="Закрыть"></button>
+  <p class="modal-basket-paragraph">Товар добавлен в корзину!</p>
+    <div class="modal-background-button">
+ <ul class="modal-basket-list-button">
+   <li class="">
+     <a class="complex-title-link modal-basket-list-button-issue" href="#">Оформить заказ</a>
+ </li>
+   <li class="">
+     <button class="modal-basket-list-button-resume" type="button">Продолжить покупки</button>
+   </li>
  </ul>
+</div>
+<div>
 </section>
 
 </body>

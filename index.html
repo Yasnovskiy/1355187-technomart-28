@@ -34,16 +34,18 @@
 
   <p class="info-shop">
   Интернет-магазин
-  строительных материалов
-  и инструментов для ремонта
+  строительных материалов и инструментов для ремонта
   </p>
 
-<div>
-<img src="/icon/icon-phone.svg" alt="">
-<a class="tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
-  <address>
+<div class="communication">
+  <div class="tel">
+<a class="tel-link" href="tel:+78125550555">+7 (812) 555-05-55</a>
+  </div>
+    <div class="address">
+  <p>
     г. Санкт-Петербург, ул. Б. Конюшенная, д 19/8
-</address>
+</p>
+  </div>
 </div>
 
   <ul class="registration">
@@ -86,52 +88,75 @@
 </header>
 
 <main >
-  <section class="">
-    <ul class="">
-      <li class="">
-       <h4>Материалы</h4>
-        <a href="#">На любой вкус</a>
-         <img src="./img/main/materials.svg" alt="Банка с краской">
-      </li>
-      <li class="">
-       <h4>Инструменты</h4>
-        <a href="#">На все случаи</a>
-         <img src="./img/main/tools.svg" alt="Дрель">
-      </li>
-      <li class="">
-       <h4>Техника</h4>
-        <a href="#">Для стройки</a>
-         <img src="./img/main/technic.svg" alt="Трактор">
-      </li>
-      <li class="">
-       <h4>Скидки 50%</h4>
-        <a href="#">На 350 товаров</a>
-         <img src="./img/main/discounts.svg" alt="Тележка">
-      </li>
-      <li class="">
-       <h4>Доставка</h4>
-        <a href="#">Бесплатно</a>
-         <img src="./img/main/delivery.svg" alt="Авто">
-      </li>
-    </ul>
 
-  <div "slaider">
-      <div>
-      <h4>Дрели</h4>
-      <p>Соседям на радость!</p>
-      <a href="#">Открыть каталог</a>
+  <section class="wrapper promo">
+<div class="menu-group">
+
+    <div class="box-1 box">
+       <p class="box-tittle">Материалы</p>
+        <a class="menu-grop-box-text menu-grop-box-button" href="#">На любой вкус</a>
       </div>
-      <div>
-      <h4>Перфоратор</h4>
-      <p>Настоящие мужские игрушки!</p>
-      <a href="#">Открыть каталог</a>
+
+      <div class="box-2  box">
+       <p class="box-tittle">Инструмент</p>
+        <a class="menu-grop-box-text menu-grop-box-button" href="#">На все случаи</a>
       </div>
-        <ul>
-          <li><input type="radio" name="" value=""></li>
-          <li><input type="radio" name="" value=""></li>
-        </ul>
-    </div>
-  </section>
+
+      <div class="box-3  box">
+       <p class="box-tittle">Техника</p>
+        <a class="menu-grop-box-text menu-grop-box-button" href="#">Для стройки</a>
+      </div>
+
+      <div class="box-4  box">
+       <p class="box-tittle">Скидки 50%</p>
+        <a class="menu-grop-box-text menu-grop-box-button" href="#">На 350 товаров</a>
+      </div>
+
+      <div class="box-5  box">
+       <p class="box-tittle">Доставка</p>
+        <a class="menu-grop-box-text menu-grop-box-button" href="#">Бесплатно</a>
+      </div>
+
+      <div class="box-6">
+        <div class="promo-slider">
+          <input class="promo-slider-screen-radio visually-hidden promo-slider-drills" id="radio-one" type="radio" name="slider-radio" checked>
+          <input  class="promo-slider-screen-radio visually-hidden promo-slider-hammer-drills" id="radio-two" type="radio" name="slider-radio">
+            <ul class="promo-slider-screen-list">
+          <li class="promo-slider-screen-item promo-slider-screen-drills">
+          <h4 class="promo-slider-screen-title">Дрели</h4>
+          <p class="promo-slider-screen-text">Соседям на радость!</p>
+          <a class="promo-slider-screen-link" href="#">Открыть каталог</a>
+        </li>
+
+          <li class="promo-slider-screen-item promo-slider-screen-hammer-drills">
+          <h4 class="promo-slider-screen-title">Перфоратор</h4>
+          <p class="promo-slider-screen-text">Настоящие мужские игрушки!</p>
+          <a class="promo-slider-screen-link" href="#">Открыть каталог</a>
+        </li>
+      </ul>
+            <ul class="promo-slider-pager-list">
+              <li class="promo-slider-pager-item">
+                <label class="promo-slider-page page-drills" for="radio-one">
+                  <span class="visually-hidden">1 экран</span>
+                </label>
+              </li>
+              <li class="promo-slider-pager-item">
+                <label class="promo-slider-page page-hammer-drills" for="radio-two">
+                  <span  class="visually-hidden">2 экран</span>
+                </label>
+              </li>
+            </ul>
+
+            <label class="promo-flip promo-flip-first" for="radio-one">
+              <span  class="">первая</span>
+            </label>
+            <label class="promo-flip promo-flip-second" for="radio-two">
+              <span  class="">вторая</span>
+            </label>
+        </div>
+      </div>
+  </div>
+</section>
 
   <section class="popular-product-main">
     <div class="complex-title">
@@ -300,16 +325,16 @@
        </div>
   </section>
 
-<div class="index-columns">
+<div class="wrapper index-columns">
   <section class="contacts">
-    <h2 class="tittle-section">КОМПАНИЯ «ТЕХНОМАРТ»</h2>
+    <h2 class="tittle-section tittle-section-company">КОМПАНИЯ «ТЕХНОМАРТ»</h2>
     <div class="contacts-paragraph">
     <p class="contacts-paragraph-item-one">Настоящий мужской шоппинг начинается здесь! Огромный выбор товара для ремонта
     и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах</p>
     <p class="contacts-paragraph-item-two">Мы можем доставить ваш товар в самые отдельнные точки России!<br>
     Техномарт работает со многими траспортными компаниями:</p>
   </div>
-    <ul class="">
+    <ul class="contacts-list">
       <li>Деловые линии</li>
       <li>Автотрейдинг</li>
       <li>ЖелДорЭкспедиция</li>
@@ -317,10 +342,13 @@
     <a class="complex-title-link contacts-title-link-company" href="#">Подробнее о компании</a>
   </section>
 
-  <section class="">
+  <section>
     <h2 class="tittle-section">КОНТАКТЫ</h2>
     <p class="">Вы можете забрать товар сами, заехав в наш офис:</p>
-    <!... Здесь будет карта...!>
+    <iframe class=" modal-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+    width="300" height="158"
+    allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+    </iframe>
     <a class="complex-title-link contacts-title-link-company" href="blank.html">Заблудились? Напишите нам!</a>
   </section>
 </div>
@@ -370,7 +398,7 @@
 
   <section>
   <p class="rights-reserved">
-    &copy;2010-2019 Компания "Техномарт" Все права защищены
+    &copy;2010-2019 Компания «Техномарт» Все права защищены
     </p>
 </section>
 
@@ -411,23 +439,33 @@
 
 
 
-  <section class="window">
-    <button type="button">Закрыть</button>
+  <section class="modal modal-basket">
+    <div class="wrapper-modal">
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
    <form action="https://echo.htmlacademy.ru" method="post">
+     <div class="modal-menu-write">
      <p>
-       <label for="appointment-name">Ваше имя: </label>
-       <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+       <label for="appointment-name">Ваше имя:</label>
+       <br>
+       <input class="modal-menu-write-top" id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
      </p>
      <p>
       <label for="login-login">Ваш e-mail: </label>
-      <input id="login-login" type="email" name="email" placeholder="email@example.com">
+      <br>
+      <input class="modal-menu-write-top" id="login-login" type="email" name="email" placeholder="email@example.com">
     </p>
+  </div>
+
      <p>
      <label for="info-field">Текст письма:</label>
-       <textarea name="comment" id="comment-field" rows="3" placeholder="В свободной форме"></textarea>
+     <br>
+       <textarea class="modal-menu-write-letter" name="comment" id="comment-field" rows="3" placeholder="В свободной форме"></textarea>
     </p>
-    <button type="submit">Отправить</button>
+    <div class="modal-background-button">
+    <button class="complex-title-link modal-menu-write-send" type="submit">Отправить</button>
+    <div class="">
   </form>
+</div>
 </section>
 
 </body>
