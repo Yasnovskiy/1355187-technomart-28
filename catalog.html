@@ -13,22 +13,32 @@
   <header class="main-header">
     <div class="very-top">
       <div class="very-top-container wrapper">
-
       <a class="main-header-logo" href="index.html">
-        <img src="./img/icon/logo.jpg" width="220" height="47"  alt="ТЕХНОМАРТ">
+        <img src="./img/logo.svg" width="220" height="47"  alt="ТЕХНОМАРТ">
       </a>
 
 
-          <form class="very-top-link search" action="index.html" method="post">
-            <label for="">Поиск</label>
-            <input type="text" name="" value="">
-          </form>
-
-
-          <a class="very-top-link bookmarks" href="#">Закладки: 0</a>
-          <a class="very-top-link basket" href="#">Корзина</a>
-          <a class="order" href="#">Оформить заказ</a>
+      <div class="very-top-container-form">
+                <form class="very-top-form search" action="https://echo.htmlacademy.ru" method="post">
+                  <label class="visually-hidden" for="search">Поиск</label>
+                  <input class="input-search" type="text" name="text-search" id="search" placeholder="Поиск:" required>
+                  <svg class="svg-search" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path  fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586 15.586 17l-3.542-3.542A7.465 7.465 0 017.5 15 7.5 7.5 0 1115 7.5c0 1.643-.542 3.24-1.542 4.544zM7.5 2A5.506 5.506 0 002 7.5 5.506 5.506 0 007.5 13c3.032 0 5.5-2.468 5.5-5.5C13 4.467 10.532 2 7.5 2z"/>
+                  </svg>
+                </form>
       </div>
+
+
+      <a class="very-top-link bookmarks" href="#">
+        <span class="very-top-bookmark-text">Закладки: 0</span>
+      </a>
+      <a class="very-top-link basket-catalog" href="#">
+        <span class="very-top-basket-text">Корзина: 10</span>
+        </a>
+      <a class="very-top-link order" href="#">
+      Оформить заказ
+      </a>
+  </div>
 </div>
 
 <div class="header-info">
@@ -38,22 +48,33 @@
   и инструментов для ремонта
   </p>
 
-<div class="">
-<img src="/icon/icon-phone.svg" alt="">
-<a class="tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
-  <address>
-    г. Санкт-Петербург, ул. Б. Конюшенная, д 19/8
-</address>
+  <div class="communication">
+      <div class="tel">
+  <a class="tel-link" href="tel:+78125550555">+7 (812) 555-05-55</a>
+  </div>
+    <address class="address">
+      г. Санкт-Петербург, ул. Б. Конюшенная, д 19/8
+  </address>
+
+  </div>
+
+
+
+<div class="user">
+  <svg class="svg-shape" width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39C-.026 14.902 0 18 0 18h20s.025-3.099-2.119-3.834z" fill="#C5C5C5"/></svg>
+  <a class="user-name">Равшан Джамшутович</a>
+  <svg class="svg-pazlogin" width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 8.5L11.125 0v6h-6v5h6v6L20 8.5z" fill="#C5C5C5"/><path d="M2.106 13.952V3.048c.018-.376.17-1.057 1.01-1.057h5.027V0H3.116C.938 0 .112 1.81.086 3.027v10.946C.113 15.189.939 17 3.117 17h5.027v-1.99H3.116c-.84 0-.992-.683-1.01-1.058z" fill="#C5C5C5"/></svg>
+
+  <ul class="user-list">
+  <li class="user-list-item ">
+    <a class="user-list-link" href="#">Мои заказы</a>
+  </li>
+  <li class="user-list-item">
+    <a class="user-list-link" href="#">Личный кабинет</a>
+  </li>
+</ul>
 </div>
 
-<img src="./img/icon/shape.svg" alt="">
-  <p>Равшан Джамшутович</p>
-    <img src="./img/icon/icon-pazlogin.svg" alt="">
-      <a href="blank.html">Выход</a>
-        <ul>
-          <li><a href="#">Мои заказы</a></li>
-          <li><a href="#">Личный кабинет</a></li>
-        </ul>
 </div>
 
 <nav class="main-navigation">
@@ -88,10 +109,10 @@
   <section class="wrapper">
     <ul class="location-list">
       <li class="location-list-item">
-        <a class="location-link" href="catalog.html">Каталог</a>
+        <a class="location-link location-link-home" href="catalog.html">Каталог</a>
       </li>
       <li class="location-list-item">
-        <a class="location-link" href="#">Инструменты</a>
+        <a class="location-link" href="#">Инструмент</a>
       </li>
       <li class="location-list-item">
       <a class="location-link" href="#">Перфораторы</a>
@@ -102,11 +123,17 @@
 
 <section class="wrapper page-title">
 <h1 class="page-title-item">Перфораторы</h1>
+
+
 </section>
 
 
+<div class="wrapper index-columns">
+<section class="filters">
+  <h6 class="filter-title">Фильтр</h6>
+</section>
 
-<section class="sort wrapper">
+<section class="sort">
   <h6>Сортировка:</h6>
     <ul class="sort-list">
       <li class="sort-list-iteam">
@@ -120,11 +147,11 @@
       </li>
     </ul>
 </section>
+</div>
 
 <section class="wrapper">
 <div class="home-directory">
   <div class="filter">
-    <h6>Фильт</h6>
       <form method="get" action="https://echo.htmlacademy.ru">
     <fieldset class="filter-item">
         <legend>Цена:</legend>
@@ -353,17 +380,17 @@
     </ul>
 </div>
 </div>
+
+<div class="">
+  <button type="button" disabled>1</button>
+  <button type="button">2</button>
+  <button type="button">3</button>
+  <input type="submit" value="Следующая">
+</div>
 </section>
 
-  <div>
-    <button type="button" disabled>1</button>
-    <button type="button">2</button>
-    <button type="button">3</button>
-    <input type="submit" value="Следующая">
-  </div>
-
-
-<section class="wrapper">
+<section class=" perforator-main">
+  <div class="wrapper">
   <h2 class="perforator-title">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
     <p class="perforator-paragraph">
       Перфоратор - универсальный строительный инструмент. Предназначен для сверления
@@ -371,6 +398,7 @@
       перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
       В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель
     </p>
+  </div>
 </section>
 </main>
 
