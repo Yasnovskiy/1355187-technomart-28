@@ -29,7 +29,7 @@
       </div>
 
 
-      <a class="very-top-link bookmarks" href="#">
+      <a class="very-top-link bookmarks-catalog" href="#">
         <span class="very-top-bookmark-text">Закладки: 0</span>
       </a>
       <a class="very-top-link basket-catalog" href="#">
@@ -43,9 +43,7 @@
 
 <div class="header-info">
   <p class="info-shop">
-  Интернет-магазин
-  строительных материалов
-  и инструментов для ремонта
+  Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта
   </p>
 
   <div class="communication">
@@ -61,12 +59,13 @@
 
 
 <div class="user">
-  <svg class="svg-shape" width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39C-.026 14.902 0 18 0 18h20s.025-3.099-2.119-3.834z" fill="#C5C5C5"/></svg>
+
+  <svg class="svg-shape" width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39C-.026 14.902 0 18 0 18h20s.025-3.099-2.119-3.834z"/></svg>
   <a class="user-name">Равшан Джамшутович</a>
-  <svg class="svg-pazlogin" width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 8.5L11.125 0v6h-6v5h6v6L20 8.5z" fill="#C5C5C5"/><path d="M2.106 13.952V3.048c.018-.376.17-1.057 1.01-1.057h5.027V0H3.116C.938 0 .112 1.81.086 3.027v10.946C.113 15.189.939 17 3.117 17h5.027v-1.99H3.116c-.84 0-.992-.683-1.01-1.058z" fill="#C5C5C5"/></svg>
+  <a href="" aria-label="Выйти из личного кабинета"><svg class="svg-pazlogin" width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 8.5L11.125 0v6h-6v5h6v6L20 8.5z"/><path d="M2.106 13.952V3.048c.018-.376.17-1.057 1.01-1.057h5.027V0H3.116C.938 0 .112 1.81.086 3.027v10.946C.113 15.189.939 17 3.117 17h5.027v-1.99H3.116c-.84 0-.992-.683-1.01-1.058z" /></svg></a>
 
   <ul class="user-list">
-  <li class="user-list-item ">
+  <li class="user-list-item">
     <a class="user-list-link" href="#">Мои заказы</a>
   </li>
   <li class="user-list-item">
@@ -123,35 +122,12 @@
 
 <section class="wrapper page-title">
 <h1 class="page-title-item">Перфораторы</h1>
-
-
 </section>
-
-
-<div class="wrapper index-columns">
-<section class="filters">
-  <h6 class="filter-title">Фильтр</h6>
-</section>
-
-<section class="sort">
-  <h6>Сортировка:</h6>
-    <ul class="sort-list">
-      <li class="sort-list-iteam">
-        <a class="sort-link" href="#">по цене</a>
-      </li>
-      <li class="sort-list-iteam">
-        <a href="#">по типу</a>
-      </li>
-      <li class="sort-list-iteam">
-        <a href="#">по функционалу</a>
-      </li>
-    </ul>
-</section>
-</div>
 
 <section class="wrapper">
 <div class="home-directory">
   <div class="filter">
+    <h6 class="filter-title">Фильтр</h6>
       <form method="get" action="https://echo.htmlacademy.ru">
     <fieldset class="filter-item">
         <legend>Цена:</legend>
@@ -182,44 +158,44 @@
     </fieldset>
 
   <form method="post" action="#">
-    <h3>Производители:</h3>
+    <h3 class="home-directory-title">Производители:</h3>
+
       <ul class="check-list">
+
         <li class="filter-option filter-checkbox">
-          <input class="visually-hidden check-input" type="checkbox" id="bosch" name="manuf_bosch" checked >
-          <span class="check-box"></span>
-          <label class="check" for="bosch">BOSCH</label>
+          <input class="visually-hidden check-input-sample" type="checkbox" id="bosch" name="manuf_bosch" checked>
+          <label class="check-sample" for="bosch">BOSCH</label>
         </li>
+
         <li class="filter-option filter-checkbox">
-          <input class="visually-hidden check-input" type="checkbox" id="intepskol" name="manuf_bosch">
-          <span class="check-box"></span>
-          <label class="check" for="intepskol">ИНТЕРСКОЛ</label>
+          <input class="visually-hidden check-input-sample" type="checkbox" id="intepskol" name="manuf_bosch">
+          <label class="check-sample" for="intepskol">ИНТЕРСКОЛ</label>
         </li>
+
         <li class="filter-option filter-checkbox">
-          <input class="visually-hidden check-input" type="checkbox" id="makita" name="manuf_bosch" checked>
-        <span class="check-box"></span>
-          <label class="check" for="makita">MAKITA</label>
+          <input class="visually-hidden check-input-sample" type="checkbox" id="makita" name="manuf_bosch" checked>
+          <label class="check-sample" for="makita">MAKITA</label>
         </li>
+
         <li class="filter-option filter-checkbox">
-          <input class="visually-hidden check-input" type="checkbox" id="dewalt" name="manuf_bosch">
-          <span class="check-box"></span>
-          <label class="check" for="dewalt">DEWALT</label>
+          <input class="visually-hidden check-input-sample" type="checkbox" id="dewalt" name="manuf_bosch">
+          <label class="check-sample" for="dewalt">DEWALT</label>
         </li>
+
         <li class="filter-option filter-checkbox">
-          <input class="visually-hidden check-input" type="checkbox" id="hitachi" name="manuf_bosch">
-          <span class="check-box"></span>
-          <label class="check" for="hitachi">HITACHI</label>
+          <input class="visually-hidden check-input-sample" type="checkbox" id="hitachi" name="manuf_bosch">
+          <label class="check-sample" for="hitachi">HITACHI</label>
         </li>
       </ul>
-    <h3>Питание:</h3>
+
+    <h3 class="home-directory-title">Питание:</h3>
       <ul class="check-list">
         <li class="filter-option filter-radio">
           <input class="visually-hidden radio-input" type="radio" name="power" value="battery" id="battery" checked>
-          <span class="radio-box"></span>
           <label class="radiobox" for="battery">Аккумуляторные</label>
         </li>
-        <li  class="filter-option filter-radio">
-          <input class="visually-hidden radio-input" type="radio" name="power" value="network" id="network">
-          <span class="radio-box"></span>
+        <li class="filter-option filter-radio">
+          <input class="visually-hidden radio-input" type="radio" name="power" value="network" id="network" >
           <label class="radiobox" for="network">Сетевые</label>
         </li>
       </ul>
@@ -227,10 +203,24 @@
 </div>
 
   <section class="catalog-item">
+    <div class="sort">
+    <h6 class="filter-title">Сортировка:</h6>
+      <ul class="sort-list">
+        <li class="sort-list-iteam">
+          <a class="sort-link" href="#">по цене</a>
+        </li>
+        <li class="sort-list-iteam">
+          <a href="#">по типу</a>
+        </li>
+        <li class="sort-list-iteam">
+          <a href="#">по функционалу</a>
+        </li>
+      </ul>
+    </div>
     <ul class="card-product-list catalog-list">
-      <li class="card-product-item">
+      <li class="card-product-item ">
         <div class="card-product-img-container">
-          <img class="card-product-img" src="./img/product/Object-1.png" alt="" width="184" height="164">
+          <img class="card-product-img" src="./img/product/Object-1.png" alt="" width="144" height="128">
           <div class="card-product-buttons-block">
            <a class="card-product-button card-product-buy-button" href="#">
              <span class="card-product-buy-button-cart">Купить</span>
@@ -247,7 +237,7 @@
 
       <li class="card-product-item">
         <div class="card-product-img-container">
-          <img class="card-product-img" src="./img/product/Object-1.png" alt="" width="184" height="164">
+          <img class="card-product-img" src="./img/product/Object-1.png" alt="" width="144" height="128">
           <div class="card-product-buttons-block">
            <a class="card-product-button card-product-buy-button" href="#">
              <span class="card-product-buy-button-cart">Купить</span>
@@ -262,9 +252,9 @@
         </p>
       </li>
 
-      <li class="card-product-item">
+      <li class="card-product-item new">
         <div class="card-product-img-container">
-          <img class="card-product-img" src="./img/product/Object-1.png" alt="" width="184" height="164">
+          <img class="card-product-img" src="./img/product/Object-1.png" alt="" width="144" height="128">
           <div class="card-product-buttons-block">
            <a class="card-product-button card-product-buy-button" href="#">
              <span class="card-product-buy-button-cart">Купить</span>
@@ -279,9 +269,9 @@
         </p>
       </li>
 
-      <li class="card-product-item">
+      <li class="card-product-item new">
         <div class="card-product-img-container">
-          <img class="card-product-img" src="./img/product/Object-3.png" alt="" width="184" height="164">
+          <img class="card-product-img" src="./img/product/Object-3.png" alt="" width="127" height="112">
           <div class="card-product-buttons-block">
            <a class="card-product-button card-product-buy-button" href="#">
              <span class="card-product-buy-button-cart">Купить</span>
@@ -298,7 +288,7 @@
 
       <li class="card-product-item">
         <div class="card-product-img-container">
-          <img class="card-product-img" src="./img/product/Object-1.png" alt="" width="184" height="164">
+          <img class="card-product-img" src="./img/product/Object-1.png" alt="" width="144" height="128">
           <div class="card-product-buttons-block">
            <a class="card-product-button card-product-buy-button" href="#">
              <span class="card-product-buy-button-cart">Купить</span>
@@ -313,9 +303,9 @@
         </p>
       </li>
 
-      <li class="card-product-item">
+      <li class="card-product-item new">
         <div class="card-product-img-container">
-          <img class="card-product-img" src="./img/product/Object-2.png" alt="" width="184" height="164">
+          <img class="card-product-img" src="./img/product/Object-2.png" alt="" width="127" height="112">
           <div class="card-product-buttons-block">
            <a class="card-product-button card-product-buy-button" href="#">
              <span class="card-product-buy-button-cart">Купить</span>
@@ -328,9 +318,9 @@
           <span class="card-product-new-price-value">12500 Р.</span>
         </p>
       </li>
-      <li class="card-product-item">
+      <li class="card-product-item new">
         <div class="card-product-img-container">
-          <img class="card-product-img" src="./img/product/Object-3.png" alt="" width="184" height="164">
+          <img class="card-product-img" src="./img/product/Object-3.png" alt="" width="127" height="112">
           <div class="card-product-buttons-block">
            <a class="card-product-button card-product-buy-button" href="#">
              <span class="card-product-buy-button-cart">Купить</span>
@@ -347,7 +337,7 @@
 
       <li class="card-product-item">
         <div class="card-product-img-container">
-          <img class="card-product-img" src="./img/product/Object-1.png" alt="" width="184" height="164">
+          <img class="card-product-img" src="./img/product/Object-1.png" alt="" width="144" height="128">
           <div class="card-product-buttons-block">
            <a class="card-product-button card-product-buy-button" href="#">
              <span class="card-product-buy-button-cart">Купить</span>
@@ -362,9 +352,9 @@
         </p>
       </li>
 
-      <li class="card-product-item">
+      <li class="card-product-item new">
         <div class="card-product-img-container">
-          <img class="card-product-img" src="./img/product/Object-2.png" alt="" width="184" height="164">
+          <img class="card-product-img" src="./img/product/Object-2.png" alt="" width="127" height="112">
           <div class="card-product-buttons-block">
            <a class="card-product-button card-product-buy-button" href="#">
              <span class="card-product-buy-button-cart">Купить</span>
@@ -377,19 +367,18 @@
           <span class="card-product-new-price-value">12500 Р.</span>
         </p>
       </li>
+      <div class="card-buttons">
+        <button class="card-button-catalog" type="button">1</button>
+        <button class="card-button-catalog" type="button">2</button>
+        <button class="card-button-catalog" type="button">3</button>
+        <input class="card-button-catalog button-next" type="submit" value="Следующая">
+      </div>
     </ul>
 </div>
 </div>
-
-<div class="">
-  <button type="button" disabled>1</button>
-  <button type="button">2</button>
-  <button type="button">3</button>
-  <input type="submit" value="Следующая">
-</div>
 </section>
 
-<section class=" perforator-main">
+<section class="perforator-main">
   <div class="wrapper">
   <h2 class="perforator-title">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
     <p class="perforator-paragraph">
@@ -405,85 +394,86 @@
 
 <footer class="page-footer footer">
   <div class="main-footer">
-    <div class="wrapper">
+    <div class="wrapper main-footer-wrapper">
 
       <div class="main-footer-first-line">
-      <a class="footer-logo" href="index.html"><img src="./img/icon/logo.jpg" alt="ТЕХНОМАРТ"></a>
-    <nav class="footer-navigation">
-     <ul class="footer-list first-list">
-      <li><a href="#">Компания</a></li>
-      <li><a href="blank.html">Новости</a></li>
-      <li><a href="price.html">Каталог</a></li>
-      <li><a href="catalog.html">Доставка</a></li>
-      <li><a href="blank.html">Контакты</a></li>
-     </ul>
-   </div>
+      <a class="footer-logo" href="index.html">
+        <img src="./img/icon/logo.jpg" alt="ТЕХНОМАРТ" width="220" height="68">
+      </a>
+      <div class="main-footer-two-line-text">
+         <address class="main-footer-address">
+           г. Санкт-Петербург, Б. Конюшенная, д. 19/8
+         </address>
+         <a class="" href="tel:+78125550555">
+         +7 (812) 555-05-55
+         </a>
+      </div>
+    </div>
 
 <div class="main-footer-two-line">
-  <div class="main-footer-two-line-text">
-     <address>
-       г. Санкт-Петербург, Б. Конюшенная, д. 19/8
-     </address>
-     <a href="tel:+78125550555">
-     +7 (812) 555-05-55
-     </a>
-</div>
+  <nav class="footer-navigation">
+   <ul class="footer-list first-list">
+    <li><a href="#">Компания</a></li>
+    <li><a href="blank.html">Новости</a></li>
+    <li><a href="price.html">Каталог</a></li>
+    <li><a href="catalog.html">Доставка</a></li>
+    <li><a href="blank.html">Контакты</a></li>
+   </ul>
+
      <ul class="footer-list second-list">
       <li><a href="blank.html">Материалы</a></li>
       <li><a href="blank.html">Техника</a></li>
       <li><a href="price.html">Инструменты</a></li>
       <li><a href="catalog.html">Спецпредложения</a></li>
      </ul>
-   </div>
-   </div>
    </nav>
  </div>
+
+</div>
 </div>
 
 
-<div class="footer wrapper">
+<div class="footer-bottom wrapper">
   <div class="footer-info">
 
   <section>
   <p class="rights-reserved">
-    &copy;2010-2019 Компания «Техномарт»  Все права защищены
+    &copy; 2010-2019 Компания «Техномарт» Все права защищены
     </p>
 </section>
 
-  <section class="footer-social">
+
    <ul class="social">
-      <li>
-          <a class="social-button" href="#">
+      <li >
+          <a class="social-button social-button-vk" href="#">
             <span class="visually-hidden">Вконтакте</span>
-            <svg width="27" height="16" viewBox="0 0 128 76"><path d="M125,5.15c.89-3,0-5.15-4.23-5.15h-14a6,6,0,0,0-6.09,4S93.59,21.31,83.5,32.59c-3.26,3.26-4.74,4.3-6.52,4.3-.89,0-2.18-1-2.18-4V5.15c0-3.56-1-5.15-4-5.15h-22a3.37,3.37,0,0,0-3.56,3.22c0,3.37,5,4.15,5.56,13.64V37.48c0,4.52-.82,5.34-2.6,5.34-4.74,0-16.29-17.43-23.13-37.38C23.72,1.57,22.38,0,18.8,0H4.8C.8,0,0,1.88,0,4c0,3.71,4.75,22.1,22.1,46.42C33.67,67,50,76,64.8,76c8.9,0,10-2,10-5.45V58c0-4,.84-4.8,3.66-4.8,2.08,0,5.64,1,13.94,9C101.9,71.74,103.46,76,108.8,76h14c4,0,6-2,4.85-6s-5.8-9.64-11.81-16.4c-3.27-3.86-8.16-8-9.64-10.09-2.08-2.67-1.49-3.86,0-6.23,0,0,17-24,18.83-32.18Z" fill="#fff"/></svg>
           </a>
         </li>
         <li>
-          <a class="social-button" href="#">
+          <a class="social-button social-button-fb" href="#">
             <span class="visually-hidden">Фейсбук</span>
-            <svg width="19" height="22" viewBox="0 0 10.15 21.74"><path d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z" fill="#fff"/></svg>
           </a>
         </li>
         <li>
-          <a class="social-button" href="#">
+          <a class="social-button social-button-insta" href="#">
             <span class="visually-hidden">Инстаграм</span>
-            <svg width="20" height="20" viewBox="0 0 20 20"><path d="M18 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-8 6a4 4 0 1 1-4 4 4 4 0 0 1 4-4zM2.5 18a.47.47 0 0 1-.5-.5V9h2.1a3.4 3.4 0 0 0-.1 1 6 6 0 1 0 12 0 3.4 3.4 0 0 0-.1-1H18v8.5a.47.47 0 0 1-.5.5zM18 4.5a.47.47 0 0 1-.5.5h-2a.47.47 0 0 1-.5-.5v-2a.47.47 0 0 1 .5-.5h2a.47.47 0 0 1 .5.5z" fill="#fff"/></svg>
           </a>
         </li>
     </ul>
-</section>
 
-
-    <p class="feedback">
-      <b>Обратная связь:</b>
+<div class="feedback-main">
+    <div class="feedback">
+      <h6 class="feedback-title">Обратная связь:</h6>
       <a class="feedback-link" href="mailto:mail@htmlacademy.ru">nail@htmlacademy.ru</a>
-    </p>
-      <p class="feedback">
-        <b>Разработано - </b>
+    </div>
+      <div class="feedback">
+        <h6 class="feedback-title">Разработано - </h6>
       <a class="feedback-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-     </p>
+    </div>
+  </div>
 </div>
 </div>
+
 </footer>
 
 <section class="modal modal-basket">

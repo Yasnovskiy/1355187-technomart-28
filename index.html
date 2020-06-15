@@ -17,7 +17,7 @@
         <img src="./img/logo.svg" width="220" height="47"  alt="ТЕХНОМАРТ">
       </a>
 
-<div class="very-top-container-form">
+        <div class="very-top-container-form">
           <form class="very-top-form search" action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="search">Поиск</label>
             <input class="input-search" type="text" name="text-search" id="search" placeholder="Поиск:" required>
@@ -42,25 +42,27 @@
 <div class="header-info">
 
   <p class="info-shop">
-  Интернет-магазин
-  строительных материалов и инструментов для ремонта
+  Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта
   </p>
 
-<div class="communication">
-    <div class="tel">
-<a class="tel-link" href="tel:+78125550555">
-  <span class="communication-tel">+7 (812) 555-05-55</span>
-</a>
-</div>
-  <address class="address">
-    г. Санкт-Петербург, ул. Б. Конюшенная, д 19/8
-</address>
+  <div class="communication">
+      <div class="tel">
+  <a class="tel-link" href="tel:+78125550555">+7 (812) 555-05-55</a>
+  </div>
+    <address class="address">
+      г. Санкт-Петербург, ул. Б. Конюшенная, д 19/8
+  </address>
 
-</div>
+  </div>
 
   <ul class="registration">
     <li class="registration-item">
-      <a class="registration-link registration-link-enter" href="blank.html">Войти</a>
+      <a class="registration-link registration-link-enter" href="blank.html">
+        <svg class="svg-login" width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14.167 8.5L5.714 0v6H0v5h5.714v6l8.453-8.5z"/><path d="M16.177 15.01H11.39V17h4.787c2.074 0 2.861-1.81 2.885-3.026V3.028C19.038 1.811 18.252 0 16.177 0H11.39v1.99h4.787c.8 0 .945.681.962 1.057v10.904c-.016.376-.163 1.059-.962 1.059z"/>
+        </svg>
+        Войти
+      </a>
     </li>
     <li class="registration-item">
       <a class="registration-link" href="blank.html">Регистрация</a>
@@ -102,7 +104,7 @@
   <section class="wrapper promo">
 <div class="menu-group">
 
-    <div class="box-1 box">
+    <div class="box-1 box new">
        <p class="box-tittle">Материалы</p>
         <a class="menu-grop-box-text menu-grop-box-button" href="#">На любой вкус</a>
       </div>
@@ -191,9 +193,9 @@
           </p>
         </li>
 
-        <li class="card-product-item">
+        <li class="card-product-item new">
           <div class="card-product-img-container">
-            <img class="card-product-img" src="./img/product/Object-3.png" alt="" width="184" height="164">
+            <img class="card-product-img" src="./img/product/Object-3.png" alt="" width="127" height="112">
             <div class="card-product-buttons-block">
              <a class="card-product-button card-product-buy-button" href="#">
                <span class="card-product-buy-button-cart">Купить</span>
@@ -210,7 +212,7 @@
 
         <li class="card-product-item">
           <div class="card-product-img-container">
-            <img class="card-product-img" src="./img/product/Object-1.png" alt="" width="184" height="164">
+            <img class="card-product-img" src="./img/product/Object-1.png" alt="" width="144" height="128">
             <div class="card-product-buttons-block">
              <a class="card-product-button card-product-buy-button" href="#">
                <span class="card-product-buy-button-cart">Купить</span>
@@ -225,9 +227,9 @@
           </p>
         </li>
 
-        <li class="card-product-item">
+        <li class="card-product-item new">
           <div class="card-product-img-container">
-            <img class="card-product-img" src="./img/product/Object-2.png" alt="" width="184" height="164">
+            <img class="card-product-img" src="./img/product/Object-2.png" alt="" width="127" height="112">
             <div class="card-product-buttons-block">
              <a class="card-product-button card-product-buy-button" href="#">
                <span class="card-product-buy-button-cart">Купить</span>
@@ -315,20 +317,21 @@
            <input class="visually-hidden service-radio" type="radio" name="service" id="service-delivery" value="" checked>
            <article class="service-article service-article-delivery">
              <h2 class="service-info-list">Доставка</h2>
-            <p class="service-info-list-paragraph service-info-list-paragraph-delivery">Мы с удовольствием доставим ваш товар прямо квашему подъезду совершенно бесплатно!
-               Ведь&nbsp;мы неплохо,&nbsp;заработаем&nbsp;,&nbsp;поднимая&nbsp;его на ваш этаж!</p>
+            <p class="service-info-list-paragraph service-info-list-paragraph-delivery">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
+               <p class="service-info-list-paragraph service-info-list-paragraph-delivery-two">Ведь мы неплохо, заработаем, поднимая его на ваш этаж!</p>
              </article >
              <input class="visually-hidden service-radio" type="radio" name="service" id="service-guarantee" value="">
              <article  class="service-article service-article-guarantee">
                <h2 class="service-info-list">Гарантия</h2>
               <p class="service-info-list-paragraph service-info-list-paragraph-guarantee">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда
-              можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.Дом уж восстановите как-нибудь сами.</p>
+              можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
               </article >
               <input class="visually-hidden service-radio" type="radio" name="service" id="service-credit" value="">
               <article class="service-article service-article-credit">
                 <h2 class="service-info-list">Кредит</h2>
               <p class="service-info-list-paragraph service-info-list-paragraph-credit">Залезть в долговую яму стало проще!
                 Кредитные консультанты придут вам на помощь.</p>
+                <a class="complex-title-link contacts-title-link-company" href="#">Отправить заявку</a>
               </article >
            </div>
          </div>
@@ -341,19 +344,25 @@
     <div class="contacts-paragraph">
     <p class="contacts-paragraph-item-one">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта
     и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах</p>
-    <p class="contacts-paragraph-item-two">Мы можем доставить ваш товар в самые отдельнные точки России!<br>
-    Техномарт работает со многими траспортными компаниями:</p>
+    <p class="contacts-paragraph-item-two">Мы можем доставить ваш товар в самые отдельнные точки России!
+    Техномарт работает со многими транспортными компаниями:</p>
   </div>
     <ul class="contacts-list">
-      <li>Деловые линии</li>
-      <li>Автотрейдинг</li>
-      <li>ЖелДорЭкспедиция</li>
+      <li class="contacts-list-item ">
+      Деловые линии
+      </li>
+      <li class="contacts-list-item">
+        Автотрейдинг
+      </li>
+      <li class="contacts-list-item">
+        ЖелДорЭкспедиция
+      </li>
     </ul>
     <a class="complex-title-link contacts-title-link-company" href="#">Подробнее о компании</a>
   </section>
 
   <section>
-    <h2 class="tittle-section">КОНТАКТЫ</h2>
+    <h2 class="tittle-section-contacts">КОНТАКТЫ</h2>
     <p class="contacts-paragraph-map">Вы можете забрать товар сами, заехав в наш офис:</p>
      <img class="contacts-map" src="img/map.png" width="300" height="158" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
     <a class="complex-title-link contacts-title-link-write" href="blank.html">Заблудились? Напишите нам!</a>
@@ -365,43 +374,46 @@
 
 <footer class="page-footer footer">
   <div class="main-footer">
-    <div class="wrapper">
+    <div class="wrapper main-footer-wrapper">
 
-      <div class="main-footer-first-line">
-      <a class="footer-logo" href="index.html"><img src="./img/icon/logo.jpg" alt="ТЕХНОМАРТ"></a>
-    <nav class="footer-navigation">
-     <ul class="footer-list first-list">
-      <li><a href="#">Компания</a></li>
-      <li><a href="blank.html">Новости</a></li>
-      <li><a href="price.html">Каталог</a></li>
-      <li><a href="catalog.html">Доставка</a></li>
-      <li><a href="blank.html">Контакты</a></li>
-     </ul>
-   </div>
+      <div >
+      <a class="footer-logo" href="index.html">
+        <img src="./img/icon/logo.jpg" alt="ТЕХНОМАРТ" width="220" height="68">
+      </a>
+      <div class="main-footer-two-line-text">
+         <address class="main-footer-address">
+           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+         </address>
+         <a class="tel-footer" href="tel:+78125550555">
+         +7 (812) 555-05-55
+         </a>
+      </div>
+    </div>
 
 <div class="main-footer-two-line">
-  <div class="main-footer-two-line-text">
-     <address>
-       г. Санкт-Петербург, Б. Конюшенная, д. 19/8
-     </address>
-     <a href="tel:+78125550555">
-     +7 (812) 555-05-55
-     </a>
-</div>
+  <nav class="footer-navigation">
+   <ul class="footer-list first-list">
+    <li><a href="#">Компания</a></li>
+    <li><a href="blank.html">Новости</a></li>
+    <li><a href="price.html">Каталог</a></li>
+    <li><a href="catalog.html">Доставка</a></li>
+    <li><a href="blank.html">Контакты</a></li>
+   </ul>
+
      <ul class="footer-list second-list">
       <li><a href="blank.html">Материалы</a></li>
       <li><a href="blank.html">Техника</a></li>
       <li><a href="price.html">Инструменты</a></li>
       <li><a href="catalog.html">Спецпредложения</a></li>
      </ul>
-   </div>
-   </div>
    </nav>
  </div>
+
+</div>
 </div>
 
 
-<div class="footer wrapper">
+<div class="footer-bottom wrapper">
   <div class="footer-info">
 
   <section>
@@ -410,9 +422,9 @@
     </p>
 </section>
 
-  <section class="footer-social">
+
    <ul class="social">
-      <li>
+      <li >
           <a class="social-button social-button-vk" href="#">
             <span class="visually-hidden">Вконтакте</span>
           </a>
@@ -428,17 +440,17 @@
           </a>
         </li>
     </ul>
-</section>
 
-
-    <p class="feedback">
-      <b>Обратная связь:</b>
+<div class="feedback-main">
+    <div class="feedback">
+      <h6 class="feedback-title">Обратная связь:</h6>
       <a class="feedback-link" href="mailto:mail@htmlacademy.ru">nail@htmlacademy.ru</a>
-    </p>
-      <p class="feedback">
-        <b>Разработано - </b>
+    </div>
+      <div class="feedback">
+        <h6 class="feedback-title">Разработано - </h6>
       <a class="feedback-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-     </p>
+    </div>
+  </div>
 </div>
 </div>
 
