@@ -14,7 +14,7 @@
     <div class="very-top">
       <div class="very-top-container wrapper">
       <a class="main-header-logo" href="index.html">
-        <img src="./img/logo.svg" width="220" height="47"  alt="ТЕХНОМАРТ">
+        <img src="./img/icon/logo.svg" width="220" height="47"  alt="ТЕХНОМАРТ">
       </a>
 
         <div class="very-top-container-form">
@@ -50,7 +50,7 @@
   <a class="tel-link" href="tel:+78125550555">+7 (812) 555-05-55</a>
   </div>
     <address class="address">
-      г. Санкт-Петербург, ул. Б. Конюшенная, д 19/8
+      г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
   </address>
 
   </div>
@@ -141,7 +141,7 @@
         </li>
 
           <li class="promo-slider-screen-item promo-slider-screen-hammer-drills">
-          <h4 class="promo-slider-screen-title">Перфоратор</h4>
+          <h4 class="promo-slider-screen-title">Перфораторы</h4>
           <p class="promo-slider-screen-text">Настоящие мужские игрушки</p>
           <a class="promo-slider-screen-link complex-title-link promo-slider-screen-link-button" href="#">Открыть каталог</a>
         </li>
@@ -160,10 +160,10 @@
             </ul>
 
             <label class="promo-flip promo-flip-first" for="radio-one">
-              <span  class="">первая</span>
+              <span  class="visually-hidden promo-flip-first-arrow">В право</span>
             </label>
             <label class="promo-flip promo-flip-second" for="radio-two">
-              <span  class="">вторая</span>
+              <span  class="visually-hidden promo-flip-second-arrow">В лево</span>
             </label>
         </div>
       </div>
@@ -253,42 +253,42 @@
         <ul class="manufacturer-list">
           <li class="manufacturer-navigation-item">
             <a class="manufacturer-navigation-link" href="#">
-              <img src="./img/manufacturers/Ob-bosch.svg" alt="BOSCH">
+              <img src="./img/manufacturers/Ob-bosch.svg" width="126" height="37" alt="BOSCH">
             </a>
           </li>
           <li class="manufacturer-navigation-item">
             <a class="manufacturer-navigation-link" href="#">
-              <img src="./img/manufacturers/Ob-makita.svg" width="126" height="37" alt="MAKITA">
+              <img src="./img/manufacturers/Ob-makita.svg" width="123" height="40" alt="MAKITA">
             </a>
           </li>
           <li class="manufacturer-navigation-item">
             <a class="manufacturer-navigation-link" href="#">
-              <img src="./img/manufacturers/Ob-dewalt.svg" alt="DEWALT">
+              <img src="./img/manufacturers/Ob-dewalt.svg" width="146" height="44" alt="DEWALT">
           </a>
           </li>
           <li class="manufacturer-navigation-item">
             <a class="manufacturer-navigation-link" href="#">
-              <img src="./img/manufacturers/Ob-intepskol.svg" alt="ИНТЕРСКОЛ" width="220" height="88">
+              <img src="./img/manufacturers/Ob-intepskol.svg" alt="ИНТЕРСКОЛ" width="200" height="75">
             </a>
           </li>
           <li class="manufacturer-navigation-item">
             <a class="manufacturer-navigation-link" href="#">
-              <img src="./img/manufacturers/Ob-hitachi.svg" alt="HITACHI">
+              <img src="./img/manufacturers/Ob-hitachi.svg" width="169" height="31" alt="HITACHI">
             </a>
           </li>
           <li class="manufacturer-navigation-item">
             <a class="manufacturer-navigation-link" href="#">
-              <img src="./img/manufacturers/Ob-lg.svg" alt="LG">
+              <img src="./img/manufacturers/Ob-lg.svg" width="121" height="73" alt="LG">
             </a>
           </li>
           <li class="manufacturer-navigation-item">
             <a class="manufacturer-navigation-link" href="#">
-              <img src="./img/manufacturers/Ob-aeg.svg" alt="AEG">
+              <img src="./img/manufacturers/Ob-aeg.svg" width="151" height="96" alt="AEG">
             </a>
           </li>
           <li class="manufacturer-navigation-item">
             <a class="manufacturer-navigation-link" href="#">
-              <img src="./img/manufacturers/Ob-metabo.svg" alt="METABO">
+              <img src="./img/manufacturers/Ob-metabo.svg" width="204" height="69" alt="METABO">
             </a>
           </li>
         </ul>
@@ -376,7 +376,7 @@
   <div class="main-footer">
     <div class="wrapper main-footer-wrapper">
 
-      <div >
+      <div>
       <a class="footer-logo" href="index.html">
         <img src="./img/icon/logo.jpg" alt="ТЕХНОМАРТ" width="220" height="68">
       </a>
@@ -460,33 +460,31 @@
 
 
   <section class="modal modal-basket">
-    <div class="wrapper-modal">
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
    <form action="https://echo.htmlacademy.ru" method="post">
      <div class="modal-menu-write">
-     <p>
+     <p class="modal-menu-write-input">
        <label class="title-label" for="appointment-name">Ваше имя:</label>
-       <br>
+
        <input class="modal-menu-write-top" id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
      </p>
-     <p>
+     <p class="modal-menu-write-input">
       <label class="title-label" for="login-login">Ваш e-mail: </label>
-      <br>
+
       <input class="modal-menu-write-top" id="login-login" type="email" name="email" placeholder="email@example.com">
     </p>
-     <p>
+     <p class="modal-menu-write-textarea">
      <label class="title-label" for="info-field">Текст письма:</label>
-     <br>
+
        <textarea class="modal-menu-write-letter" name="comment" id="comment-field" rows="3" placeholder="В свободной форме"></textarea>
     </p>
     </div>
-    <div class="modal-background-button">
-    <button class="complex-title-link modal-menu-write-send" type="submit">Отправить</button>
-    <div class="">
-  </form>
-</div>
-</section>
 
+    <div class="modal-button-submit">
+    <button class="complex-title-link modal-menu-write-send" type="submit">Отправить</button>
+  </div>
+  </form>
+</section>
 
 <section class="modal modal-map">
   <h2 class="visually-hidden">Как до нас добраться</h2>
