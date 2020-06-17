@@ -14,7 +14,7 @@
     <div class="very-top">
       <div class="very-top-container wrapper">
       <a class="main-header-logo" href="index.html">
-        <img src="./img/icon/logo.svg" width="220" height="47"  alt="ТЕХНОМАРТ">
+        <img src="./img/logo.svg" width="220" height="47"  alt="ТЕХНОМАРТ">
       </a>
 
 
@@ -51,7 +51,7 @@
   <a class="tel-link" href="tel:+78125550555">+7 (812) 555-05-55</a>
   </div>
     <address class="address">
-      г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+      г. Санкт-Петербург, ул. Б. Конюшенная, д 19/8
   </address>
 
   </div>
@@ -60,12 +60,9 @@
 
 <div class="user">
 
-
-  <a class="user-name" href="#">
-<svg class="svg-shape" width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39C-.026 14.902 0 18 0 18h20s.025-3.099-2.119-3.834z"/></svg>
-    Равшан Джамшутович
-  <svg class="svg-pazlogin" width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><a class="svg-pazlogin-list" href="" aria-label="Выйти из личного кабинета"><path d="M20 8.5L11.125 0v6h-6v5h6v6L20 8.5z"/><path d="M2.106 13.952V3.048c.018-.376.17-1.057 1.01-1.057h5.027V0H3.116C.938 0 .112 1.81.086 3.027v10.946C.113 15.189.939 17 3.117 17h5.027v-1.99H3.116c-.84 0-.992-.683-1.01-1.058z" /></a></svg>
-  </a>
+  <svg class="svg-shape" width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39C-.026 14.902 0 18 0 18h20s.025-3.099-2.119-3.834z"/></svg>
+  <a class="user-name">Равшан Джамшутович</a>
+  <a href="" aria-label="Выйти из личного кабинета"><svg class="svg-pazlogin" width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 8.5L11.125 0v6h-6v5h6v6L20 8.5z"/><path d="M2.106 13.952V3.048c.018-.376.17-1.057 1.01-1.057h5.027V0H3.116C.938 0 .112 1.81.086 3.027v10.946C.113 15.189.939 17 3.117 17h5.027v-1.99H3.116c-.84 0-.992-.683-1.01-1.058z" /></svg></a>
 
   <ul class="user-list">
   <li class="user-list-item">
@@ -130,10 +127,10 @@
 <section class="wrapper">
 <div class="home-directory">
   <div class="filter">
-    <h6 class="filter-title filter-title-name">Фильтр</h6>
+    <h6 class="filter-title">Фильтр</h6>
       <form method="get" action="https://echo.htmlacademy.ru">
     <fieldset class="filter-item">
-        <legend>Цена :</legend>
+        <legend>Цена:</legend>
         <div class="range-filter">
           <div class="range-controls">
             <div class="scale">
@@ -163,7 +160,7 @@
   <form method="post" action="#">
     <h3 class="home-directory-title">Производители:</h3>
 
-      <ul class="check-list-one">
+      <ul class="check-list">
 
         <li class="filter-option filter-checkbox">
           <input class="visually-hidden check-input-sample" type="checkbox" id="bosch" name="manuf_bosch" checked>
@@ -191,8 +188,8 @@
         </li>
       </ul>
 
-    <h3 class="home-directory-title nutrition">Питание:</h3>
-      <ul class="check-list-two">
+    <h3 class="home-directory-title">Питание:</h3>
+      <ul class="check-list">
         <li class="filter-option filter-radio">
           <input class="visually-hidden radio-input" type="radio" name="power" value="battery" id="battery" checked>
           <label class="radiobox" for="battery">Аккумуляторные</label>
@@ -202,28 +199,25 @@
           <label class="radiobox" for="network">Сетевые</label>
         </li>
       </ul>
-          <input class="sort-input-check" type="submit" value="Показать">
+<input type="submit" value="Показать">
 </div>
 
-  <section class="catalog-item catalog-list">
+  <section class="catalog-item">
     <div class="sort">
     <h6 class="filter-title">Сортировка:</h6>
-      <ul class="sort-list ">
+      <ul class="sort-list">
         <li class="sort-list-iteam">
-          <a class="sort-link sort-link-active" href="#">по цене</a>
+          <a class="sort-link" href="#">по цене</a>
         </li>
         <li class="sort-list-iteam">
-          <a class="sort-link" href="#">по типу</a>
+          <a href="#">по типу</a>
         </li>
         <li class="sort-list-iteam">
-          <a class="sort-link" href="#">по функционалу</a>
+          <a href="#">по функционалу</a>
         </li>
       </ul>
-        <a class="" href=""><svg  class="svg-up-dir svg-dir-active" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path  d="M5.5 0L0 10h11z"/></svg></a>
-      <a class="" href=""><svg class="svg-down-dir" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path  d="M5.5 10L0 0h11"/></svg></a>
     </div>
-
-    <ul class="card-product-list ">
+    <ul class="card-product-list catalog-list">
       <li class="card-product-item ">
         <div class="card-product-img-container">
           <img class="card-product-img" src="./img/product/Object-1.png" alt="" width="144" height="128">
@@ -374,7 +368,7 @@
         </p>
       </li>
       <div class="card-buttons">
-        <button class="card-button-catalog card-button-catalog-active" type="button">1</button>
+        <button class="card-button-catalog" type="button">1</button>
         <button class="card-button-catalog" type="button">2</button>
         <button class="card-button-catalog" type="button">3</button>
         <input class="card-button-catalog button-next" type="submit" value="Следующая">
@@ -387,12 +381,9 @@
 <section class="perforator-main">
   <div class="wrapper">
   <h2 class="perforator-title">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
-    <p class="perforator-paragraph-one">
-      Перфоратор — универсальный строительный инструмент. Предназначен для сверления
-      и долбления отверстий в кирпиче, бетоне и камне.
-    </p>
-      <p class="perforator-paragraph">
-      Существуют электромеханические и пневматические
+    <p class="perforator-paragraph">
+      Перфоратор - универсальный строительный инструмент. Предназначен для сверления
+      и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические
       перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
       В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель
     </p>
@@ -405,15 +396,15 @@
   <div class="main-footer">
     <div class="wrapper main-footer-wrapper">
 
-      <div>
+      <div class="main-footer-first-line">
       <a class="footer-logo" href="index.html">
         <img src="./img/icon/logo.jpg" alt="ТЕХНОМАРТ" width="220" height="68">
       </a>
       <div class="main-footer-two-line-text">
          <address class="main-footer-address">
-           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+           г. Санкт-Петербург, Б. Конюшенная, д. 19/8
          </address>
-         <a class="tel-footer" href="tel:+78125550555">
+         <a class="" href="tel:+78125550555">
          +7 (812) 555-05-55
          </a>
       </div>
@@ -489,22 +480,17 @@
   <div class="wrapper-modal modal-menu-write">
   <button class="modal-close" type="button" aria-label="Закрыть"></button>
   <p class="modal-basket-paragraph">Товар добавлен в корзину!</p>
-</div>
-
-<div >
-  <div class="modal-background-button">
-   <ul class="modal-basket-list-button">
-     <li class="">
-       <a class="complex-title-link modal-basket-list-button-issue" href="#">Оформить заказ</a>
-     </li>
-       <li class="">
-       <button class="modal-basket-list-button-resume" type="button">Продолжить покупки</button>
-     </li>
+    <div class="modal-background-button">
+ <ul class="modal-basket-list-button">
+   <li class="">
+     <a class="complex-title-link modal-basket-list-button-issue" href="#">Оформить заказ</a>
+ </li>
+   <li class="">
+     <button class="modal-basket-list-button-resume" type="button">Продолжить покупки</button>
+   </li>
  </ul>
 </div>
-</div>
-
-
+<div>
 </section>
 
 </body>
