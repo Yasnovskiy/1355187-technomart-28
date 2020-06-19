@@ -659,7 +659,7 @@ background-image: url(../img/icon/icon-bookmark.svg);
   position: absolute;
   top: 0;
   right: 0;
-  background: url(../img/new-price.svg) no-repeat top right;
+  background: url(../img/main/new-price.svg) no-repeat top right;
 }
 
 
@@ -775,12 +775,12 @@ background-image: url(../img/icon/icon-bookmark.svg);
 }
 
 .promo-slider-screen-drills{
-  background: brown url(../img/drills.jpg) no-repeat top left;
+  background: brown url(../img/slider/drills.jpg) no-repeat top left;
   background-size: cover;
 }
 
 .promo-slider-screen-hammer-drills{
-  background: brown url(../img/hammer-drills.jpg) no-repeat top left;
+  background: brown url(../img/slider/hammer-drills.jpg) no-repeat top left;
   background-size: cover;
 }
 
@@ -898,7 +898,7 @@ display: block;
   left: 0;
   width: 50px;
   height: 50px;
-  background: url(../img/icon-left.svg) no-repeat top left;
+  background: url(../img/icon/icon-left.svg) no-repeat top left;
   cursor: pointer;
 }
 
@@ -914,7 +914,7 @@ display: block;
   right: 0;
   width: 50px;
   height: 50px;
-  background: url(../img/icon-right.svg) no-repeat top right;
+  background: url(../img/icon/icon-right.svg) no-repeat top right;
   cursor: pointer;
 }
 
@@ -1002,14 +1002,17 @@ display: block;
   font-size: 17px;
   line-height: 30px;
   color: var(--basic-black);
-  margin-bottom: 13px;
+  margin-bottom: 16px;
+  border-top: 1px solid #C5C5C5;
+  padding-top: 15px;
 }
 
 .nutrition{
   padding: 0;
   margin: 0;
   margin-bottom: 20px;
-
+  border-top: 1px solid #C5C5C5;
+  padding-top: 16px;
 }
 
 .sort-input-check{
@@ -1441,7 +1444,7 @@ opacity: 0.4;
   margin: 0;
   padding: 0;
   border: none;
-  margin-bottom: 44px;
+  margin-bottom: 25px;
 }
 
 .range-filter {
@@ -1480,7 +1483,7 @@ opacity: 0.4;
 
 .range-controls .toggle {
   position: absolute;
-  top: 33px;
+  top: 31px;
   left: 0;
   width: 4px;
   height: 4px;
@@ -1584,7 +1587,7 @@ opacity: 0.4;
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 11px;
 }
 
 .check-list-two{
@@ -1812,6 +1815,7 @@ color:  #000000;
   margin-bottom: 68px;
 }
 
+
 .service-list{
   margin: 0;
   padding: 0;
@@ -1820,20 +1824,16 @@ color:  #000000;
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
-  border-top: 1px solid black;
   margin-right: 78px;
 }
 
 .service-list::after{
   width: 10px;
   height: 279px;
-  background-image: url(../img/shadow.svg) no-repeat right center;
+  background-image: url(../img/main/shadow.svg) no-repeat right center;
 }
 
 .service-item {
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
   background: var(--basic-purple-blue);
   box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
   color: var(--basic-white);
@@ -1847,8 +1847,14 @@ color:  #000000;
 .service-label {
   display: block;
   padding: 13.5px 139px 17.5px 22px;
-
   cursor: pointer;
+}
+
+.service-label-press {
+  background: var(--basic-white);
+  color: var(--basic-purple-blue);
+  border: none;
+  border-top: 1px solid white;
 }
 
 .service-article{
@@ -2019,6 +2025,7 @@ margin-right: 160px;
 
 .contacts-map{
   margin-bottom: 26px;
+  cursor: pointer;
 }
 
 .footer{
@@ -2237,6 +2244,29 @@ margin-left: 66px;
   border-top: 7px solid red;
 }
 
+.modal-show{
+  display: block;
+  animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-2000px);
+    }
+
+    70% {
+        transform: translateY(30px);
+    }
+
+    90% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .modal-map {
   width: 943px;
   height: 449px;
@@ -2253,7 +2283,7 @@ margin-left: 66px;
   border: none;
 }
 
-.modal-basket {
+.modal-communication {
   top: 120px;
   bottom: auto;
   width: 620px;
@@ -2357,6 +2387,7 @@ margin-left: 66px;
 }
 
 .modal-close {
+  display: block;
   position: absolute;
   top: 14px;
   right: 14px;
@@ -2365,6 +2396,7 @@ margin-left: 66px;
   background-color: transparent;
   border: 0;
   cursor: pointer;
+  z-index: 100;
 }
 
 .modal-buttons-block{
@@ -2401,11 +2433,6 @@ margin-left: 66px;
   padding: 0;
 }
 
-.modal-basket-list-button-issue{
-  padding: 11px 46px 9px 47px;
-  margin-right: 10px;
-}
-
 .modal-basket-list-button-resume{
   font-family: "Cuprum";
   font-style: normal;
@@ -2416,4 +2443,15 @@ margin-left: 66px;
   border: none;
   background: var(--basic-white);
   padding: 10px 31px 10px 31px;
+  cursor: pointer;
+}
+
+.modal-basket-list-button-issue{
+  padding: 11px 46px 9px 47px;
+  margin-right: 10px;
+}
+
+.modal-error {
+    animation-name: shake;
+    animation-duration: 0.9s;
 }
