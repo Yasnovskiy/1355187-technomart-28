@@ -8,11 +8,14 @@ let communication = document.querySelector('.modal-communication');
 let arrange = document.querySelector('.modal-basket-list-button-issue');
 let resume = document.querySelector('.modal-basket-list-button-resume');
 
+let modalCommunicationForm =  document.querySelector('.modal-communication-form');
+let communicationName =  document.querySelector( '.communication-name');
+let communicationEmail =  document.querySelector( '.communication-email');
+let communicationLetter =  document.querySelector( '.communication-letter');
+let modalCommunication =  document.querySelector( '.modal-communication');
 
 let name = document.querySelector('[name=name]');
 let email = document.querySelector('[name=email]');
-
-
 
 
 if (link) {
@@ -50,6 +53,20 @@ if (write) {
     console.log('умный!');
 });
 };
+
+
+
+if(modalCommunicationForm){
+    modalCommunicationForm.addEventListener ('submit', function (evt) {
+        if (!communicationName.value || !communicationEmail.value || !communicationLetter.value) {
+                evt.preventDefault ();
+                modalCommunication.classList.remove('modal-error');
+                modalCommunication.offsetWidth = modalCommunication.offsetWidth;
+                modalCommunication.classList.add('modal-error');
+        }
+    });
+};
+
 
 if (arrange) {
   arrange.addEventListener("click", function (evt) {

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
       <title>HTML Academy: Техномарт</title>
       <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-  <link href="./normalize.css/normalize.css" rel="stylesheet">
+  <link href="./css/normalize.css" rel="stylesheet">
   <link href="./css/style.css" rel="stylesheet">
   </head>
 
@@ -13,9 +13,9 @@
   <header class="main-header">
     <div class="very-top">
       <div class="very-top-container wrapper">
-      <a class="main-header-logo" href="index.html">
-        <img src="./img/icon/logo.svg" width="220" height="47"  alt="ТЕХНОМАРТ">
-      </a>
+        <a class="main-header-logo" href="index.html">
+          <img  class="main-header-logo-img" src="./img/icon/logo.svg" width="220" height="47"  alt="ТЕХНОМАРТ">
+        </a>
 
         <div class="very-top-container-form">
           <form class="very-top-form search" action="https://echo.htmlacademy.ru" method="post">
@@ -46,13 +46,14 @@
   </p>
 
   <div class="communication">
-      <div class="tel">
-  <a class="tel-link" href="tel:+78125550555">+7 (812) 555-05-55</a>
-  </div>
+
+    <a class="tel-link" href="tel:+78125550555">
+      <span class="tel">+7 (812) 555-05-55</span>
+      </a>
+
     <address class="address">
       г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-  </address>
-
+    </address>
   </div>
 
   <ul class="registration">
@@ -160,10 +161,10 @@
             </ul>
 
             <label class="promo-flip promo-flip-first" for="radio-one">
-              <span  class="visually-hidden promo-flip-first-arrow">В право</span>
+              <span  class="visually-hidden promo-flip-first-arrow">Вправо</span>
             </label>
             <label class="promo-flip promo-flip-second" for="radio-two">
-              <span  class="visually-hidden promo-flip-second-arrow">В лево</span>
+              <span  class="visually-hidden promo-flip-second-arrow">Влево</span>
             </label>
         </div>
       </div>
@@ -246,95 +247,102 @@
 </section>
 
 <section class="manufacturer">
-    <div class="complex-title">
+  <div class="complex-title">
     <h2 class="complex-title-header">Популярные производители</h2>
-      <a class="complex-title-link complex-title-link-manufacturers" href="#">Все производители</a>
-    </div>
-        <ul class="manufacturer-list">
-          <li class="manufacturer-navigation-item">
-            <a class="manufacturer-navigation-link" href="#">
-              <img src="./img/manufacturers/Ob-bosch.svg" width="126" height="37" alt="BOSCH">
-            </a>
-          </li>
-          <li class="manufacturer-navigation-item">
-            <a class="manufacturer-navigation-link" href="#">
-              <img src="./img/manufacturers/Ob-makita.svg" width="123" height="40" alt="MAKITA">
-            </a>
-          </li>
-          <li class="manufacturer-navigation-item">
-            <a class="manufacturer-navigation-link" href="#">
-              <img src="./img/manufacturers/Ob-dewalt.svg" width="146" height="44" alt="DEWALT">
-          </a>
-          </li>
-          <li class="manufacturer-navigation-item">
-            <a class="manufacturer-navigation-link" href="#">
-              <img src="./img/manufacturers/Ob-intepskol.svg" alt="ИНТЕРСКОЛ" width="200" height="75">
-            </a>
-          </li>
-          <li class="manufacturer-navigation-item">
-            <a class="manufacturer-navigation-link" href="#">
-              <img src="./img/manufacturers/Ob-hitachi.svg" width="169" height="31" alt="HITACHI">
-            </a>
-          </li>
-          <li class="manufacturer-navigation-item">
-            <a class="manufacturer-navigation-link" href="#">
-              <img src="./img/manufacturers/Ob-lg.svg" width="121" height="73" alt="LG">
-            </a>
-          </li>
-          <li class="manufacturer-navigation-item">
-            <a class="manufacturer-navigation-link" href="#">
-              <img src="./img/manufacturers/Ob-aeg.svg" width="151" height="96" alt="AEG">
-            </a>
-          </li>
-          <li class="manufacturer-navigation-item">
-            <a class="manufacturer-navigation-link" href="#">
-              <img src="./img/manufacturers/Ob-metabo.svg" width="204" height="69" alt="METABO">
-            </a>
-          </li>
-        </ul>
-  </section>
+    <a class="complex-title-link complex-title-link-manufacturers" href="#">Все производители</a>
+  </div>
+  <ul class="manufacturer-list">
+    <li class="manufacturer-navigation-item">
+      <a class="manufacturer-navigation-link" href="#">
+        <img src="./img/manufacturers/Ob-bosch.svg" width="126" height="37" alt="BOSCH">
+      </a>
+    </li>
+    <li class="manufacturer-navigation-item">
+      <a class="manufacturer-navigation-link" href="#">
+        <img src="./img/manufacturers/Ob-makita.svg" width="123" height="40" alt="MAKITA">
+      </a>
+    </li>
+    <li class="manufacturer-navigation-item">
+      <a class="manufacturer-navigation-link" href="#">
+        <img src="./img/manufacturers/Ob-dewalt.svg" width="146" height="44" alt="DEWALT">
+      </a>
+    </li>
+    <li class="manufacturer-navigation-item">
+      <a class="manufacturer-navigation-link" href="#">
+        <img src="./img/manufacturers/Ob-intepskol.svg" alt="ИНТЕРСКОЛ" width="200" height="75">
+      </a>
+    </li>
+    <li class="manufacturer-navigation-item">
+      <a class="manufacturer-navigation-link" href="#">
+        <img src="./img/manufacturers/Ob-hitachi.svg" width="169" height="31" alt="HITACHI">
+      </a>
+    </li>
+    <li class="manufacturer-navigation-item">
+      <a class="manufacturer-navigation-link" href="#">
+        <img src="./img/manufacturers/Ob-lg.svg" width="121" height="73" alt="LG">
+      </a>
+    </li>
+    <li class="manufacturer-navigation-item">
+      <a class="manufacturer-navigation-link" href="#">
+        <img src="./img/manufacturers/Ob-aeg.svg" width="151" height="96" alt="AEG">
+      </a>
+    </li>
+    <li class="manufacturer-navigation-item">
+      <a class="manufacturer-navigation-link" href="#">
+        <img src="./img/manufacturers/Ob-metabo.svg" width="204" height="69" alt="METABO">
+      </a>
+    </li>
+  </ul>
+</section>
 
   <section class="service">
     <div class="wrapper">
     <h2 class="tittle-section">Сервисы</h2>
-      <p class="service-paragraph">Хороший интернет-магазин отличается от плохого не только ценам!Мы стараемся изо всех сил,
+      <p class="service-paragraph">Хороший интернет-магазин отличается от плохого не только ценам! Мы стараемся изо всех сил,
          чтобы сделать ваши покупки приятными.</p>
 
-<div class="service-info-container">
-         <ul class="service-list">
-           <li class="service-item service-label-press">
-             <label class="service-label service-label-press " for="service-delivery">Доставка</label>
-           </li>
-           <li class="service-item ">
-             <label class="service-label" for="service-guarantee">Гарантия</label>
-           </li>
-           <li class="service-item ">
-             <label class="service-label" for="service-credit">Кредит</label>
-           </li>
-         </ul>
+         <div class="service-info-container">
 
-         <div class="service-info">
-           <input class="visually-hidden service-radio" type="radio" name="service" id="service-delivery" value="" checked>
-           <article class="service-article service-article-delivery">
-             <h2 class="service-info-list">Доставка</h2>
-            <p class="service-info-list-paragraph service-info-list-paragraph-delivery">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
-               <p class="service-info-list-paragraph service-info-list-paragraph-delivery-two">Ведь мы неплохо, заработаем, поднимая его на ваш этаж!</p>
-             </article >
-             <input class="visually-hidden service-radio" type="radio" name="service" id="service-guarantee" value="">
-             <article  class="service-article service-article-guarantee">
-               <h2 class="service-info-list">Гарантия</h2>
-              <p class="service-info-list-paragraph service-info-list-paragraph-guarantee">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда
-              можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
-              </article >
-              <input class="visually-hidden service-radio" type="radio" name="service" id="service-credit" value="">
-              <article class="service-article service-article-credit">
-                <h2 class="service-info-list">Кредит</h2>
-              <p class="service-info-list-paragraph service-info-list-paragraph-credit">Залезть в долговую яму стало проще!
-                Кредитные консультанты придут вам на помощь.</p>
-                <a class="complex-title-link contacts-title-link-company" href="#">Отправить заявку</a>
-              </article >
-           </div>
-         </div>
+                   <input class="visually-hidden service-radio service-delivery" type="radio" name="service" id="service-delivery" value="" checked>
+                   <input class="visually-hidden service-radio service-guarantee" type="radio" name="service" id="service-guarantee" value="">
+                   <input class="visually-hidden service-radio service-credit" type="radio" name="service" id="service-credit" value="">
+
+                   <ul class="service-list">
+                     <li class="service-item">
+                       <label class="service-label label-delivery" for="service-delivery">Доставка</label>
+                     </li>
+                     <li class="service-item">
+                       <label class="service-label label-guarantee" for="service-guarantee">Гарантия</label>
+                     </li>
+                     <li class="service-item">
+                       <label class="service-label label-credit" for="service-credit">Кредит</label>
+                     </li>
+                   </ul>
+
+                   <div class="service-info">
+
+                     <article class="service-article service-article-delivery">
+                       <h2 class="service-info-list">Доставка</h2>
+                       <p class="service-info-list-paragraph service-info-list-paragraph-delivery">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+                       </p>
+                       <p class="service-info-list-paragraph service-info-list-paragraph-delivery-two">Ведь мы неплохо, заработаем, поднимая его на ваш этаж!
+                       </p>
+                     </article>
+
+                     <article class="service-article service-article-guarantee">
+                       <h2 class="service-info-list">Гарантия</h2>
+                       <p class="service-info-list-paragraph service-info-list-paragraph-guarantee">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда
+                         можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+                     </article>
+
+                     <article class="service-article service-article-credit">
+                       <h2 class="service-info-list">Кредит</h2>
+                       <p class="service-info-list-paragraph service-info-list-paragraph-credit">Залезть в долговую яму стало проще!
+                         Кредитные консультанты придут вам на помощь.</p>
+                       <a class="complex-title-link contacts-title-link-company" href="#">Отправить заявку</a>
+                     </article>
+                   </div>
+                 </div>
        </div>
   </section>
 
@@ -364,11 +372,12 @@
   <section>
     <h2 class="tittle-section-contacts">КОНТАКТЫ</h2>
     <p class="contacts-paragraph-map">Вы можете забрать товар сами, заехав в наш офис:</p>
-     <img class="contacts-map" src="img/map.png" width="300" height="158" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+    <a href="map.html"  class="contacts-map">
+    <img src="img/map.png" width="300" height="158" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+    </a>
     <a class="complex-title-link contacts-title-link-write" href="blank.html">Заблудились? Напишите нам!</a>
   </section>
 </div>
-
 </main>
 
 
@@ -417,8 +426,8 @@
   <div class="footer-info">
 
   <section>
-  <p class="rights-reserved">
-    &copy; 2010-2019 Компания «Техномарт» Все права защищены
+    <p class="rights-reserved">
+      &copy; 2010-2019 Компания «Техномарт» Все права защищены
     </p>
 </section>
 
@@ -456,29 +465,42 @@
 
 </footer>
 
+<section class="modal modal-basket-catalog">
+  <button class="modal-close" type="button" aria-label="Закрыть"></button>
+  <p class="modal-basket-paragraph">Товар добавлен в корзину!</p>
 
+  <div class="modal-buttons-block">
+   <ul class="modal-basket-list-button">
+     <li class="">
+       <a class="complex-title-link modal-basket-list-button-issue" href="#">Оформить заказ</a>
+     </li>
+       <li class="">
+       <button class="modal-basket-list-button-resume" type="button">Продолжить покупки</button>
+     </li>
+ </ul>
+</div>
+</section>
 
-
-  <section class="modal modal-communication">
-    <button class="modal-close" type="button" aria-label="Закрыть"></button>
-   <form action="https://echo.htmlacademy.ru" method="post">
-     <div class="modal-menu-write">
-     <p class="modal-menu-write-input">
-       <label class="title-label" for="appointment-name">Ваше имя:</label>
-       <input class="modal-menu-write-top" id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
-     </p>
-     <p class="modal-menu-write-input">
-      <label class="title-label" for="login-login">Ваш e-mail: </label>
-      <input class="modal-menu-write-top" id="login-login" type="email" name="email" placeholder="email@example.com">
-    </p>
-     <p class="modal-menu-write-textarea">
-     <label class="title-label" for="info-field">Текст письма:</label>
-       <textarea class="modal-menu-write-letter" name="comment" id="comment-field" rows="3" placeholder="В свободной форме"></textarea>
-    </p>
+<section class="modal modal-communication">
+  <button class="modal-close" type="button" aria-label="Закрыть"></button>
+  <form action="https://echo.htmlacademy.ru" method="post" class="modal-communication-form">
+    <div class="modal-menu-write">
+      <p class="modal-menu-write-input">
+        <label class="title-label" for="appointment-name">Ваше имя:</label>
+        <input class="modal-menu-write-top communication-name" id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p class="modal-menu-write-input">
+        <label class="title-label" for="login-login">Ваш e-mail: </label>
+        <input class="modal-menu-write-top communication-email" id="login-login" type="email" name="email" placeholder="email@example.com">
+      </p>
+      <p class="modal-menu-write-textarea">
+        <label class="title-label" for="info-field">Текст письма:</label>
+        <textarea class="modal-menu-write-letter communication-letter" name="comment" id="comment-field" rows="3" placeholder="В свободной форме"></textarea>
+      </p>
     </div>
     <div class="modal-button-submit">
-    <button class="complex-title-link modal-menu-write-send" type="submit">Отправить</button>
-  </div>
+      <button class="complex-title-link modal-menu-write-send" type="submit">Отправить</button>
+    </div>
   </form>
 </section>
 
@@ -492,4 +514,5 @@
 </script>
 
 </body>
+
 </html>

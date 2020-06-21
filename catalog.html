@@ -4,7 +4,7 @@
   <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
       <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-      <link href="./normalize.css/normalize.css" rel="stylesheet">
+      <link href="./css/normalize.css" rel="stylesheet">
       <link href="./css/style.css" rel="stylesheet">
 </head>
 
@@ -13,9 +13,9 @@
   <header class="main-header">
     <div class="very-top">
       <div class="very-top-container wrapper">
-      <a class="main-header-logo" href="index.html">
-        <img src="./img/icon/logo.svg" width="220" height="47"  alt="ТЕХНОМАРТ">
-      </a>
+        <a class="main-header-logo" href="index.html">
+          <img  class="main-header-logo-img" src="./img/icon/logo.svg" width="220" height="47"  alt="ТЕХНОМАРТ">
+        </a>
 
 <div class="very-top-container-form">
     <form class="very-top-form search" action="https://echo.htmlacademy.ru" method="post">
@@ -46,9 +46,9 @@
   </p>
 
   <div class="communication-catalog">
-      <div class="tel">
-  <a class="tel-link" href="tel:+78125550555">+7 (812) 555-05-55</a>
-  </div>
+    <a class="tel-link" href="tel:+78125550555">
+      <span class="tel">+7 (812) 555-05-55</span>
+      </a>
     <address class="address">
       г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
   </address>
@@ -61,9 +61,12 @@
 
 
   <a class="user-name" href="#">
-<svg class="svg-shape" width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39C-.026 14.902 0 18 0 18h20s.025-3.099-2.119-3.834z"/></svg>
+    <svg class="svg-shape" width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39C-.026 14.902 0 18 0 18h20s.025-3.099-2.119-3.834z" /></svg>
     <span>Равшан Джамшутович</span>
-  <svg class="svg-pazlogin" width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><a class="svg-pazlogin-list" href="" aria-label="Выйти из личного кабинета"><path d="M20 8.5L11.125 0v6h-6v5h6v6L20 8.5z"/><path d="M2.106 13.952V3.048c.018-.376.17-1.057 1.01-1.057h5.027V0H3.116C.938 0 .112 1.81.086 3.027v10.946C.113 15.189.939 17 3.117 17h5.027v-1.99H3.116c-.84 0-.992-.683-1.01-1.058z" /></a></svg>
+    <svg class="svg-pazlogin" width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><a class="svg-pazlogin-list" href="" aria-label="Выйти из личного кабинета">
+        <path d="M20 8.5L11.125 0v6h-6v5h6v6L20 8.5z" />
+        <path d="M2.106 13.952V3.048c.018-.376.17-1.057 1.01-1.057h5.027V0H3.116C.938 0 .112 1.81.086 3.027v10.946C.113 15.189.939 17 3.117 17h5.027v-1.99H3.116c-.84 0-.992-.683-1.01-1.058z" /></a></svg>
   </a>
 
   <ul class="user-list">
@@ -81,7 +84,7 @@
 <nav class="main-navigation">
   <ul class="site-navigation">
     <li class="site-navigation-item">
-      <a class="site-navigation-link" href="#">Главная</a>
+      <a class="site-navigation-link" href="index.html">Главная</a>
     </li>
     <li class="site-navigation-item">
       <a class="site-navigation-link" href="#">Компания</a>
@@ -127,37 +130,37 @@
 </section>
 
 <section class="wrapper">
-<div class="home-directory">
-  <div class="filter">
-    <h6 class="filter-title filter-title-name">Фильтр</h6>
+  <div class="home-directory">
+    <div class="filter">
+      <h6 class="filter-title filter-title-name">Фильтр</h6>
       <form method="get" action="https://echo.htmlacademy.ru">
-    <fieldset class="filter-item">
-        <legend>Цена :</legend>
-        <div class="range-filter">
-          <div class="range-controls">
-            <div class="scale">
-              <div class="bar" style="
-              width: 70%;
-              margin-left: 0%
-              "></div>
+        <fieldset class="filter-item">
+          <legend>Цена :</legend>
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar" style="
+          width: 70%;
+          margin-left: 0%
+          "></div>
+              </div>
+              <div class="toggle toggle-min" tabindex="0" style="
+          left: 0
+        "></div>
+              <div class="toggle toggle-max" tabindex="0" style="
+          left: 60%
+        "></div>
             </div>
-            <div class="toggle toggle-min" tabindex="0" style="
-              left: 0
-            "></div>
-            <div class="toggle toggle-max" tabindex="0" style="
-              left: 60%
-            "></div>
+            <div class="price-controls">
+              <label class="min-price">
+                <input type="number" name="min-price" value="0">
+              </label>
+              <label class="max-price">
+                <input type="number" name="max-price" value="30000">
+              </label>
+            </div>
           </div>
-          <div class="price-controls">
-            <label class="min-price">
-             <input type="number" name="min-price" value="0">
-            </label>
-            <label class="max-price">
-               <input type="number" name="max-price" value="30000">
-            </label>
-          </div>
-        </div>
-    </fieldset>
+        </fieldset>
 
   <form method="post" action="#">
     <h3 class="home-directory-title">Производители:</h3>
@@ -201,26 +204,37 @@
           <label class="radiobox" for="network">Сетевые</label>
         </li>
       </ul>
-          <input class="sort-input-check" type="submit" value="Показать">
+      <input class="sort-input-check" type="submit" value="Показать">
 </div>
 
-  <section class="catalog-item catalog-list">
-    <div class="sort">
+<section class="catalog-item catalog-list">
+  <div class="sort">
     <h6 class="filter-title">Сортировка:</h6>
-      <ul class="sort-list ">
-        <li class="sort-list-iteam">
-          <a class="sort-link sort-link-active" href="#">по цене</a>
-        </li>
-        <li class="sort-list-iteam">
-          <a class="sort-link" href="#">по типу</a>
-        </li>
-        <li class="sort-list-iteam">
-          <a class="sort-link" href="#">по функционалу</a>
-        </li>
-      </ul>
-        <a class="" href=""><svg  class="svg-up-dir svg-dir-active" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path  d="M5.5 0L0 10h11z"/></svg></a>
-      <a class="" href=""><svg class="svg-down-dir" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path  d="M5.5 10L0 0h11"/></svg></a>
-    </div>
+    <ul class="sort-list ">
+      <li class="sort-list-iteam">
+        <input type="radio" name="sort" id="sort-by-price" class="sort-input visually-hidden sort-by-price" checked>
+        <label class="sort-link label-by-price" for="sort-by-price">по цене</label>
+      </li>
+      <li class="sort-list-iteam">
+        <input type="radio" name="sort" id="sort-by-type" class="sort-input visually-hidden sort-by-type">
+        <label class="sort-link label-by-type" for="sort-by-type">по типу</label>
+      </li>
+      <li class="sort-list-iteam">
+        <input type="radio" name="sort" id="sort-by-func" class="sort-input visually-hidden sort-by-func">
+        <label class="sort-link label-by-func" for="sort-by-func">по функционалу</label>
+      </li>
+    </ul>
+
+    <input type="radio" name="sort-direct" class="visually-hidden sort-direct" checked id="sort-direct-up">
+    <label class="label-sort-direct" for="sort-direct-up">
+      <svg class="svg-up-dir svg-dir-active" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+        <path d="M5.5 0L0 10h11z" /></svg></label>
+    <input type="radio" name="sort-direct" class="visually-hidden sort-direct" id="sort-direct-down">
+    <label class="label-sort-direct" for="sort-direct-down">
+      <svg class="svg-down-dir" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+        <path d="M5.5 10L0 0h11" /></svg>
+    </label>
+</div>
 
     <ul class="card-product-list ">
       <li class="card-product-item ">
@@ -373,31 +387,31 @@
         </p>
       </li>
 
-      <div class="card-buttons">
-        <button class="card-button-catalog card-button-catalog-active" type="button">1</button>
-        <button class="card-button-catalog" type="button">2</button>
-        <button class="card-button-catalog" type="button">3</button>
-        <input class="card-button-catalog button-next" type="submit" value="Следующая">
-      </div>
-    </ul>
-</div>
-</div>
+        <div class="card-buttons">
+          <a class="card-button-catalog card-button-catalog-active" href="#">1</a>
+          <a class="card-button-catalog" href="#">2</a>
+          <a class="card-button-catalog" href="#">3</a>
+          <a class="card-button-catalog button-next" href="#">Следующая</a>
+        </div>
+      </ul>
+    </div>
+  </div>
 </section>
 
 <section class="perforator-main">
   <div class="wrapper">
-  <h2 class="perforator-title">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
-    <p class="perforator-paragraph-one">
-      Перфоратор — универсальный строительный инструмент. Предназначен для сверления
-      и долбления отверстий в кирпиче, бетоне и камне.
-    </p>
+    <h2 class="perforator-title">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
+      <p class="perforator-paragraph-one">
+        Перфоратор — универсальный строительный инструмент. Предназначен для сверления
+        и долбления отверстий в кирпиче, бетоне и камне.
+      </p>
       <p class="perforator-paragraph">
-      Существуют электромеханические и пневматические
-      перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
-      В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель
-    </p>
-  </div>
-</section>
+        Существуют электромеханические и пневматические
+        перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
+        В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель
+      </p>
+    </div>
+  </section>
 </main>
 
 
@@ -406,54 +420,54 @@
     <div class="wrapper main-footer-wrapper">
 
       <div>
-      <a class="footer-logo" href="index.html">
-        <img src="./img/icon/logo.jpg" alt="ТЕХНОМАРТ" width="220" height="68">
-      </a>
-      <div class="main-footer-two-line-text">
-         <address class="main-footer-address">
-           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-         </address>
-         <a class="tel-footer" href="tel:+78125550555">
-         +7 (812) 555-05-55
-         </a>
+        <a class="footer-logo" href="index.html">
+          <img src="./img/icon/logo.jpg" alt="ТЕХНОМАРТ" width="220" height="68">
+        </a>
+        <div class="main-footer-two-line-text">
+          <address class="main-footer-address">
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          </address>
+          <a class="tel-footer" href="tel:+78125550555">
+            +7 (812) 555-05-55
+          </a>
+        </div>
       </div>
+
+      <div class="main-footer-two-line">
+        <nav class="footer-navigation">
+          <ul class="footer-list first-list">
+            <li><a href="#">Компания</a></li>
+            <li><a href="blank.html">Новости</a></li>
+            <li><a href="price.html">Каталог</a></li>
+            <li><a href="catalog.html">Доставка</a></li>
+            <li><a href="blank.html">Контакты</a></li>
+          </ul>
+
+          <ul class="footer-list second-list">
+            <li><a href="blank.html">Материалы</a></li>
+            <li><a href="blank.html">Техника</a></li>
+            <li><a href="price.html">Инструменты</a></li>
+            <li><a href="catalog.html">Спецпредложения</a></li>
+          </ul>
+        </nav>
+      </div>
+
     </div>
-
-<div class="main-footer-two-line">
-  <nav class="footer-navigation">
-   <ul class="footer-list first-list">
-    <li><a href="#">Компания</a></li>
-    <li><a href="blank.html">Новости</a></li>
-    <li><a href="price.html">Каталог</a></li>
-    <li><a href="catalog.html">Доставка</a></li>
-    <li><a href="blank.html">Контакты</a></li>
-   </ul>
-
-     <ul class="footer-list second-list">
-      <li><a href="blank.html">Материалы</a></li>
-      <li><a href="blank.html">Техника</a></li>
-      <li><a href="price.html">Инструменты</a></li>
-      <li><a href="catalog.html">Спецпредложения</a></li>
-     </ul>
-   </nav>
- </div>
-
-</div>
-</div>
+  </div>
 
 
-<div class="footer-bottom wrapper">
-  <div class="footer-info">
+  <div class="footer-bottom wrapper">
+    <div class="footer-info">
 
-  <section>
-  <p class="rights-reserved">
-    &copy; 2010-2019 Компания «Техномарт» Все права защищены
-    </p>
-</section>
+      <section>
+        <p class="rights-reserved">
+          &copy; 2010-2019 Компания «Техномарт» Все права защищены
+        </p>
+      </section>
 
 
-   <ul class="social">
-      <li >
+      <ul class="social">
+        <li>
           <a class="social-button social-button-vk" href="#">
             <span class="visually-hidden">Вконтакте</span>
           </a>
@@ -468,20 +482,20 @@
             <span class="visually-hidden">Инстаграм</span>
           </a>
         </li>
-    </ul>
+      </ul>
 
-<div class="feedback-main">
-    <div class="feedback">
-      <h6 class="feedback-title">Обратная связь:</h6>
-      <a class="feedback-link" href="mailto:mail@htmlacademy.ru">nail@htmlacademy.ru</a>
-    </div>
-      <div class="feedback">
-        <h6 class="feedback-title">Разработано - </h6>
-      <a class="feedback-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+      <div class="feedback-main">
+        <div class="feedback">
+          <h6 class="feedback-title">Обратная связь:</h6>
+          <a class="feedback-link" href="mailto:mail@htmlacademy.ru">nail@htmlacademy.ru</a>
+        </div>
+        <div class="feedback">
+          <h6 class="feedback-title">Разработано - </h6>
+          <a class="feedback-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-</div>
 </footer>
 
 <section class="modal modal-basket-catalog">
@@ -489,15 +503,15 @@
   <p class="modal-basket-paragraph">Товар добавлен в корзину!</p>
 
   <div class="modal-buttons-block">
-   <ul class="modal-basket-list-button">
-     <li class="">
-       <a class="complex-title-link modal-basket-list-button-issue" href="#">Оформить заказ</a>
-     </li>
-       <li class="">
-       <button class="modal-basket-list-button-resume" type="button">Продолжить покупки</button>
-     </li>
- </ul>
-</div>
+    <ul class="modal-basket-list-button">
+      <li class="">
+        <a class="complex-title-link modal-basket-list-button-issue" href="#">Оформить заказ</a>
+      </li>
+      <li class="">
+        <button class="modal-basket-list-button-resume" type="button">Продолжить покупки</button>
+      </li>
+    </ul>
+  </div>
 </section>
 
 <script type="text/javascript" src="./js/document.js">
