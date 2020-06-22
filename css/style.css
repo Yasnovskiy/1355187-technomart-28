@@ -392,18 +392,21 @@ input[type="radio"].visually-hidden {
 .very-top-link {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   white-space: nowrap;
 }
 
 .very-top-bookmark-text{
   position: relative;
   display: inline-block;
+  vertical-align: top;
   padding-left: 23px;
 }
 
 .very-top-basket-text{
   position: relative;
   display: inline-block;
+  vertical-align: top;
   padding-left: 23px;
 }
 
@@ -544,7 +547,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   padding-left: 30px;
   display: inline-block;
-
+  vertical-align: top;
 }
 
 .registration{
@@ -1195,6 +1198,7 @@ display: block;
 .card-product-name{
   font-family: "PT Sans";
   display: inline-block;
+  vertical-align: top;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -1207,6 +1211,7 @@ display: block;
   margin: 0;
   padding: 0;
   display: inline-block;
+  vertical-align: top;
   margin-bottom: 9px;
   margin-left: 14px;
   text-decoration-line: line-through;
@@ -1231,6 +1236,7 @@ display: block;
   white-space: nowrap;
   padding: 6px 70px 7px 31px;
   display: inline-block;
+  vertical-align: top;
   margin: 0 auto;
   border-radius: 3px 0 0 3px;
   color: #fff;
@@ -1289,6 +1295,7 @@ display: block;
 .card-product-buy-button-cart {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   padding-left: 30px;
   margin: 0 auto;
 }
@@ -1594,6 +1601,7 @@ opacity: 0.4;
 
 .check-sample{
   display: inline-block;
+  vertical-align: top;
   position: relative;
   padding-left: 35px;
 }
@@ -1660,6 +1668,7 @@ opacity: 0.4;
 
 .radiobox{
   display: inline-block;
+  vertical-align: top;
   position: relative;
   padding-left: 35px;
   text-transform: uppercase;
