@@ -426,6 +426,7 @@
   <div class="footer-info">
 
   <section>
+    <h2 class="visually-hidden">Права компании</h2>
     <p class="rights-reserved">
       &copy; 2010-2019 Компания «Техномарт» Все права защищены
     </p>
@@ -466,6 +467,7 @@
 </footer>
 
 <section class="modal modal-basket-catalog">
+  <h2 class="visually-hidden">Корзина</h2>
   <button class="modal-close" type="button" aria-label="Закрыть"></button>
   <p class="modal-basket-paragraph">Товар добавлен в корзину!</p>
 
@@ -481,28 +483,29 @@
 </div>
 </section>
 
-<section class="modal modal-communication">
-  <button class="modal-close" type="button" aria-label="Закрыть"></button>
-  <form action="https://echo.htmlacademy.ru" method="post" class="modal-communication-form">
-    <div class="modal-menu-write">
-      <p class="modal-menu-write-input">
-        <label class="title-label" for="appointment-name">Ваше имя:</label>
-        <input class="modal-menu-write-top communication-name" id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
-      </p>
-      <p class="modal-menu-write-input">
-        <label class="title-label" for="login-login">Ваш e-mail: </label>
-        <input class="modal-menu-write-top communication-email" id="login-login" type="email" name="email" placeholder="email@example.com">
-      </p>
-      <p class="modal-menu-write-textarea">
-        <label class="title-label" for="info-field">Текст письма:</label>
-        <textarea class="modal-menu-write-letter communication-letter" name="comment" id="comment-field" rows="3" placeholder="В свободной форме"></textarea>
-      </p>
-    </div>
-    <div class="modal-button-submit">
-      <button class="complex-title-link modal-menu-write-send" type="submit">Отправить</button>
-    </div>
-  </form>
-</section>
+  <section class="modal modal-communication">
+      <h2 class="visually-hidden">Окно для обращения</h2>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+      <form action="https://echo.htmlacademy.ru" method="post" class="modal-communication-form">
+        <div class="modal-menu-write">
+          <p class="modal-menu-write-input">
+            <label class="title-label" for="appointment-name">Ваше имя:</label>
+            <input class="modal-menu-write-top communication-name" id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p class="modal-menu-write-input">
+            <label class="title-label" for="login-login">Ваш e-mail: </label>
+            <input class="modal-menu-write-top communication-email" id="login-login" type="email" name="email" placeholder="email@example.com">
+          </p>
+          <p class="modal-menu-write-textarea">
+            <label class="title-label" for="info-field">Текст письма:</label>
+            <textarea class="modal-menu-write-letter communication-letter" name="comment" id="info-field" rows="3" placeholder="В свободной форме"></textarea>
+          </p>
+        </div>
+        <div class="modal-button-submit">
+          <button class="complex-title-link modal-menu-write-send" type="submit">Отправить</button>
+        </div>
+      </form>
+    </section>
 
 <section class="modal modal-map">
   <h2 class="visually-hidden">Как до нас добраться</h2>
@@ -510,7 +513,7 @@
   <button class="modal-close" type="button" aria-label="Закрыть"></button>
 </section>
 
-<script type="text/javascript" src="./js/document.js">
+<script src="./js/document.js">
 </script>
 
 </body>
