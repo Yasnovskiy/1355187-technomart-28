@@ -17,9 +17,8 @@ let modalCommunication = document.querySelector('.modal-communication');
 let name = document.querySelector('[name=name]');
 let email = document.querySelector('[name=email]');
 
-
 if (link) {
-  link.addEventListener("click", function (evt) {
+  link.addEventListener('click', function (evt) {
     evt.preventDefault();
     map.classList.add('modal-show');
   });
@@ -27,7 +26,7 @@ if (link) {
 
 if (close) {
   close.forEach(function (item) {
-    item.addEventListener("click", function (evt) {
+    item.addEventListener('click', function (evt) {
       evt.preventDefault();
       item.parentElement.classList.remove('modal-show');
     });
@@ -44,7 +43,7 @@ if (buy) {
 };
 
 if (write) {
-  write.addEventListener("click", function (evt) {
+  write.addEventListener('click', function (evt) {
     evt.preventDefault();
     communication.classList.add('modal-show');
     name.focus();
@@ -63,14 +62,14 @@ if (modalCommunicationForm) {
 };
 
 if (arrange) {
-  arrange.addEventListener("click", function (evt) {
+  arrange.addEventListener('click', function (evt) {
     evt.preventDefault();
     modalBasketCatalog.classList.remove('modal-show');
   });
 };
 
 if (resume) {
-  resume.addEventListener("click", function (evt) {
+  resume.addEventListener('click', function (evt) {
     evt.preventDefault();
     modalBasketCatalog.classList.remove('modal-show');
   });
