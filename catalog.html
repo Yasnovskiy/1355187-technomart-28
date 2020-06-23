@@ -6,7 +6,7 @@
   <title>HTML Academy: Техномарт</title>
   <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link href="./css/normalize.css" rel="stylesheet">
-  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -15,7 +15,7 @@
     <div class="very-top">
       <div class="very-top-container wrapper">
         <a class="main-header-logo" href="index.html">
-          <img  class="main-header-logo-img" src="./img/icon/logo.svg" width="220" height="47"  alt="ТЕХНОМАРТ">
+          <img  class="main-header-logo-img" src="./img/icon/logo.svg" width="220" height="47"  alt=Техномарт>
         </a>
 
         <div class="very-top-container-form">
@@ -113,8 +113,14 @@
     <section class="wrapper">
       <h2 class="visually-hidden">Хлебные крошки</h2>
       <ul class="location-list">
+        <li class="">
+          <a class="" href="index.html">
+            <svg class="svg-home" xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12"><g fill="#C1C6CE"><path d="M3 8v4h4V8h2v4h4V8L8 3.516z"/><path d="M14.831 6.365L13 4.751V0h-2v2.987L8.332.635c-.02-.017-.043-.023-.064-.037a.465.465 0 0 0-.08-.047.551.551 0 0 0-.095-.024C8.062.521 8.032.515 8 .515c-.031 0-.061.006-.092.012a.46.46 0 0 0-.095.025c-.028.011-.053.029-.08.046-.021.014-.045.02-.064.037l-6.498 5.73a.501.501 0 0 0 .33.875.497.497 0 0 0 .331-.125L8 1.677l6.169 5.438a.501.501 0 0 0 .662-.75z"/></g></svg>
+          <span class="visually-hidden">Главная</span>
+          </a>
+        </li>
         <li class="location-list-item">
-          <a class="location-link location-link-home" href="catalog.html">Каталог</a>
+          <a class="location-link location-link-home" href="#">Каталог</a>
         </li>
         <li class="location-list-item">
           <a class="location-link" href="#">Инструмент</a>
@@ -156,6 +162,7 @@
                   <label class="min-price">
                     <input type="number" name="min-price" value="0">
                   </label>
+                  <span class="number-dash">&mdash;</span>
                   <label class="max-price">
                     <input type="number" name="max-price" value="30000">
                   </label>
@@ -420,7 +427,7 @@
 
         <div>
           <a class="footer-logo" href="index.html">
-            <img  class="main-footer-logo-img" src="./img/icon/logo.svg" width="220" height="47"  alt="ТЕХНОМАРТ">
+            <img  class="main-footer-logo-img" src="./img/icon/logo.svg" width="220" height="47"  alt="Техномарт">
           </a>
           <div class="main-footer-two-line-text">
             <address class="main-footer-address">
@@ -437,16 +444,16 @@
            <ul class="footer-list first-list">
             <li><a href="#">Компания</a></li>
             <li><a href="#">Новости</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="#">Каталог</a></li>
             <li><a href="#">Доставка</a></li>
             <li><a href="#">Контакты</a></li>
            </ul>
 
              <ul class="footer-list second-list">
-              <li><a href="#">Материалы</a></li>
-              <li><a href="#">Техника</a></li>
-              <li><a href="#">Инструменты</a></li>
-              <li><a href="#">Спецпредложения</a></li>
+               <li><a href="#">Материалы</a></li>
+               <li><a href="#">Техника</a></li>
+               <li><a href="#">Инструменты</a></li>
+               <li><a href="#">Спецпредложения</a></li>
              </ul>
            </nav>
          </div>

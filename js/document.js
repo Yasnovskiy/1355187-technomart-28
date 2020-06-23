@@ -22,7 +22,6 @@ if (link) {
   link.addEventListener ("click", function (evt) {
     evt.preventDefault ();
     map.classList.add ('modal-show');
-    console.log ('Отлично!');
   });
 };
 
@@ -31,7 +30,6 @@ if (close) {
     item.addEventListener ("click", function (evt) {
       evt.preventDefault ();
       item.parentElement.classList.remove ('modal-show');
-      console.log ('Кнопка закрыть');
     });
   });
 };
@@ -50,7 +48,6 @@ if (write) {
     evt.preventDefault ();
     communication.classList.add ('modal-show');
     name.focus ();
-    console.log ('умный!');
   });
 };
 
@@ -69,7 +66,6 @@ if (arrange) {
   arrange.addEventListener ("click", function (evt) {
     evt.preventDefault ();
     modalBasketCatalog.classList.remove ('modal-show');
-    console.log ('Ах');
   });
 };
 
@@ -77,7 +73,6 @@ if (resume) {
   resume.addEventListener ("click", function (evt) {
     evt.preventDefault ();
     modalBasketCatalog.classList.remove ('modal-show');
-    console.log ('Ух!');
   });
 };
 
